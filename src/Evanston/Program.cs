@@ -14,7 +14,9 @@ var http = new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAd
 builder.Services.AddScoped(sp => http);
 
 var appSettings = await http.GetFromJsonAsync<AppSettings>("appsettings.json", new System.Text.Json.JsonSerializerOptions() { Converters = { new JsonStringEnumConverter() } });
-builder.Services.AddSingleton(appSettings ?? new());
+builder.Services
+    .AddSingleton(appSettings ?? new())
+    .AddSingleton(new Mappers());
 
 builder.Services.AddMudServices();
 

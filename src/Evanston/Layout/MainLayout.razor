@@ -1,7 +1,7 @@
 ﻿@inherits LayoutComponentBase
 @inject NavigationManager NavigationManager
 
-<MudThemeProvider />
+<MudThemeProvider IsDarkMode="true" />
 <MudPopoverProvider />
 <MudDialogProvider />
 <MudSnackbarProvider />
@@ -11,7 +11,7 @@
     <div class="sidebar mud-elevation-1">
         <div class="top-row mud-drawer-head">
             <div>
-                <a class="navbar-brand" href="https://mudblazor.com/" target="_blank">MudBlazor</a>
+                Ace Mega School of Evanston
             </div>
         </div>
 
@@ -23,13 +23,18 @@
     </div>
 
      <main>
-        <div class="top-row px-4">
-            <MudIconButton Icon="@Icons.Custom.Brands.MudBlazor" Style="color: white;" Href="https://mudblazor.com/" Target="_blank" />
-            <MudIconButton Icon="@Icons.Custom.Brands.GitHub" Style="color: white;" Href="@GetGitHubUrl()" Target="_blank" />
-        </div>
+         <div class="top-row px-4">
+             <MudStack Row="true" Style="width:100%;">
+                 <MudSpacer/>
+                 <MudIconButton Icon="@Icons.Custom.Brands.GitHub" Style="color: white;" Href="@GetGitHubUrl()" Target="_blank"/>
+             </MudStack>
+         </div>
 
         <MudContainer MaxWidth="MaxWidth.ExtraExtraLarge" Class="my-2 pt-2">
             @Body
+            <MudScrollToTop>
+                <MudFab Color="Color.Primary" StartIcon="@Icons.Material.Filled.ArrowCircleUp" />
+            </MudScrollToTop>
         </MudContainer>
     </main>
 </div>

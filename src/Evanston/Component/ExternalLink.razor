@@ -1,0 +1,10 @@
+﻿@inherits Component.ComponentBase
+
+<MudLink Href="@Href" Target="_blank" Style="align-content:center; text-align:center;">
+    @ChildContent<MudIconButton Size="Size.Small" Color="Color.Primary" Icon="@Icons.Material.Filled.OpenInNew" />
+</MudLink>
+
+@code {
+    [Parameter]
+    public string? Href { get; set; }
+}

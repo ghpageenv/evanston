@@ -1,14 +1,84 @@
 ﻿@page "/"
+@using Evanston.Component
+@using OneOf
+@using OneOf.Types
+@inject AppSettings AppSettings
+@inject Mappers Mappers
 
-<PageTitle>Home</PageTitle>
+<PageTitle>Black Businesses | Ace Mega School of Evanston</PageTitle>
 
+<style>
+    .no-borders > td, .no-borders > tr > th {
+        border: none;
+    }
+</style>
 
-<MudText Typo="Typo.h3" GutterBottom="true">Hello, world!</MudText>
-<MudText Class="mb-8">Welcome to your new app, powered by MudBlazor and the .NET 8 Template!</MudText>
+<MudStack Spacing="3">
+    @foreach (var business in AppSettings.Businesses.Select(b => Mappers.BusinessDtoToModel(b)))
+    {
+        <MudCard Outlined="true">
+            <MudCardHeader><MudText Typo="Typo.h6">@business.Name</MudText></MudCardHeader>
+            <MudCardContent>
+                <MudHidden Breakpoint="@BreakPoint">
+                    <MudStack Spacing="6">
+                        <MudText><Centered>Description:</Centered><br/>@business.Description</MudText>
+                        <br/>
+                        <MudText Align="Align.Center">Address:<br/>@Print(business.Address)</MudText>
+                        <MudText Align="Align.Center">Phone:<br />@Print(business.Phone)</MudText>
+                        <MudText Align="Align.Center">Website:<br />@UrlView(business.Website)</MudText>
+                    </MudStack>
+                </MudHidden>
+                <MudHidden Breakpoint="@BreakPoint" Invert="true">
+                    <MudDataGrid Items="@GetRows(business)" HeaderClass="d-none" RowClass="no-borders" Breakpoint="Breakpoint.None">
+                        <Columns>
+                            <PropertyColumn Property="x => x.Property" CellStyle="text-align:right; vertical-align:top;"/>
+                            <TemplateColumn>
+                                <CellTemplate>
+                                    @if (context.Item?.Property == WebsiteColumnName)
+                                    {
+                                        @UrlView(context.Item!.Model.Website)
+                                    }
+                                    else
+                                    {
+                                        <MudText>@context.Item?.PropertyValue</MudText>
+                                    }
+                                </CellTemplate> 
+                            </TemplateColumn>
+                        </Columns>
+                    </MudDataGrid>
+                </MudHidden>
+            </MudCardContent>
+        </MudCard>
+    }
+</MudStack>
+@code{
+    private const Breakpoint BreakPoint = Breakpoint.MdAndUp;
+    private const string WebsiteColumnName = "Website:";
 
-<MudAlert Severity="Severity.Normal">
-    You can find documentation and examples on our website here:
-    <MudLink Href="https://mudblazor.com" Target="_blank" Typo="Typo.body2" Color="Color.Primary">
-        <b>www.mudblazor.com</b>
-    </MudLink>
-</MudAlert>
+    private record RowViewModel(string Property, string PropertyValue, Business Model) { public RenderFragment? View { get; set; } };
+
+    private RowViewModel[] GetRows(Business business) =>
+        new RowViewModel[]
+        {
+            new("Description:", business.Description, business),
+            new("Address:", Print(business.Address), business),
+            new("Phone:", Print(business.Phone), business),
+            new(WebsiteColumnName, Print(business.Website), business) { View = UrlView(business.Website)}
+        };
+
+    private static string Print(OneOf<Address, None> address) => address.Match(a => a.Value, none => "Unknown");
+    private static string Print(OneOf<Phone, None> phone) => phone.Match(a => a.Value, none => "Unknown");
+    private static string Print(OneOf<Uri, None> website) => website.Match(a => a.AbsoluteUri, none => "Unknown");
+
+    private RenderFragment UrlView(OneOf<Uri, None> url) => __builder =>
+    {
+        if (url.TryPickT0(out var urlValue, out _))
+        {
+            <ExternalLink Href="@urlValue.AbsoluteUri">@urlValue.AbsoluteUri</ExternalLink>
+        }
+        else
+        {
+            <MudText>Unknown</MudText>
+        }
+    };
+}
