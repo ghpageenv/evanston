@@ -10,7 +10,7 @@ public class Email : ValueOf<string, Email> { }
 
 public record Business(
     string Name,
-    string Description,
+    OneOf<string, None> Description,
     OneOf<Phone, None> Phone,
     OneOf<Address, None> Address,
     OneOf<Uri, None> Website,

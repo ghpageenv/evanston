@@ -8,7 +8,7 @@ public class BusinessDto
     public string Name { get; set; } = default!;
 
     [JsonPropertyName("description")]
-    public string Description { get; set; } = default!;
+    public string? Description { get; set; }
 
     [JsonPropertyName("address")]
     public string? Address { get; set; }

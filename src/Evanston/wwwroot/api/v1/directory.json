@@ -19,12 +19,22 @@
       "website": "https://www.cityofevanston.org/about-evanston/arts-and-culture/theatre/fleetwood-jourdain-theatre"
     },
     {
-      "name": "Shorefront Legacy Center     ",
+      "name": "Shorefront Legacy Center",
       "description": "Shorefront collects preserves and educates people about Black history on Chicago's Northshore.",
       "address": "2214 Ridge Ave. Evanston 60201",
       "phone": "(847) 864-7467",
       "website": "https://shorefrontlegacy.org/",
       "email": "shorefront@me.com"
+    },
+    {
+      "name": "A.G. Tuckpointing",
+      "chiefExecutive": "Antwan Green, owner",
+      "phone": "(773) 458-9527"
+    },
+    {
+      "name": "B & B Handyman Services",
+      "chiefExecutive": "Willie Brown, owner",
+      "phone": "(773) 706-8861"
     }
   ]
 }
