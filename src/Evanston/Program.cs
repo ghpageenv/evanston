@@ -14,7 +14,9 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 var http = new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) };
 builder.Services.AddScoped(sp => http);
 
-var appSettings = await http.GetFromJsonAsync<Directory>("/api/v1/directory.json?v=1", new System.Text.Json.JsonSerializerOptions() { Converters = { new JsonStringEnumConverter() } });
+var baseAddress = builder.HostEnvironment.BaseAddress;
+Console.WriteLine($"Base Address: {baseAddress}");
+var appSettings = await http.GetFromJsonAsync<Directory>($"{baseAddress}/api/v1/directory.json?v=1", new System.Text.Json.JsonSerializerOptions() { Converters = { new JsonStringEnumConverter() } });
 builder.Services
     .AddSingleton(appSettings ?? new())
     .AddSingleton(new Mappers());
