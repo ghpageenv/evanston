@@ -10,10 +10,11 @@ public partial class Mappers
     {
         return new(
             dto.Name,
-            dto.Description,
+            !string.IsNullOrWhiteSpace(dto.Description) ? dto.Description : new None(),
             dto.Phone != null ? Phone.From(dto.Phone) : new None(),
             dto.Address != null ? Address.From(dto.Address) : new None(),
             Uri.IsWellFormedUriString(dto.Website, UriKind.Absolute) ? new Uri(dto.Website) : new None(),
-            !string.IsNullOrWhiteSpace(dto.Email) ? Email.From(dto.Email) : new None());
+            !string.IsNullOrWhiteSpace(dto.Email) ? Email.From(dto.Email) : new None(),
+            dto.ChiefExecutive != null ? dto.ChiefExecutive : new None());
     }
 }

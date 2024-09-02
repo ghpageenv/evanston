@@ -21,36 +21,62 @@
             <MudCardContent>
                 <MudHidden Breakpoint="@BreakPoint">
                     <MudStack Spacing="6">
-                        <MudText><Centered>Description:</Centered><br/>@business.Description</MudText>
-                        <br/>
-                        <MudText Align="Align.Center">Address:<br/>@Print(business.Address)</MudText>
-                        <MudText Align="Align.Center">Phone:<br />@Print(business.Phone)</MudText>
-                        <MudText Align="Align.Center">Website:<br />@UrlView(business.Website)</MudText>
-                        <MudText Align="Align.Center">Email:<br />@EmailView(business.Email)</MudText>
+                        @if (business.Description.TryPickT0(out var description, out _))
+                        {
+                            <MudText><Centered>Description:</Centered><br/>@Print(description)</MudText>
+                            <br/>
+                        }
+                        @if (business.Address.TryPickT0(out var address, out _))
+                        {
+                            <MudText Align="Align.Center">Address:<br/>@Print(Print(address))</MudText>
+                        }
+                        @if (business.Phone.TryPickT0(out var phone, out _))
+                        {
+                            <MudText Align="Align.Center">Phone:<br/>@Print(Print(phone))</MudText>
+                        }
+                        @if (business.Website.TryPickT0(out var website, out _))
+                        {
+                            <MudText Align="Align.Center">Website:<br/>@UrlView(website)</MudText>
+                        }
+                        @if (business.Email.TryPickT0(out var email, out _))
+                        {
+                            <MudText Align="Align.Center">Email:<br/>@EmailView(email)</MudText>
+                        }
                     </MudStack>
                 </MudHidden>
                 <MudHidden Breakpoint="@BreakPoint" Invert="true">
-                    <MudDataGrid Items="@GetRows(business)" HeaderClass="d-none" RowClass="no-borders" Breakpoint="Breakpoint.None">
-                        <Columns>
-                            <PropertyColumn Property="x => x.Property" CellStyle="text-align:right; vertical-align:top;"/>
-                            <TemplateColumn>
-                                <CellTemplate>
-                                    @if (context.Item?.Property == WebsiteColumnName)
+                    <MudTable Items="@GetRows(business).Where(row => row.PropertyValue.IsT0)" Hover="true" Breakpoint="Breakpoint.None" RowClass="no-borders">
+                        <RowTemplate>
+                            <MudTd Style="text-align:right; vertical-align:top; width:60px;"><MudText>@context.PropertyName</MudText></MudTd>
+                            <MudTd>
+                                @if (context.PropertyValue.TryPickT0(out var propertyValue, out _))
+                                {
+                                    switch (context.PropertyName)
                                     {
-                                        @UrlView(context.Item!.Model.Website)
+                                        case WebsiteColumnName:
+                                            @if (context.Model.Website.TryPickT0(out var website, out _))
+                                            {
+                                                <ExternalLink Href="@website.AbsoluteUri">@website.AbsoluteUri</ExternalLink>
+                                            }
+
+                                            break;
+
+                                        case EmailColumnName:
+                                            if (context.Model.Email.TryPickT0(out var emailValue, out _))
+                                            {
+                                                <MudLink Href="@($"mailto:{emailValue}")">@emailValue</MudLink>
+                                            }
+
+                                            break;
+
+                                        default:
+                                            <MudText>@propertyValue</MudText>
+                                            break;
                                     }
-                                    else if (context.Item?.Property == EmailColumnName)
-                                    {
-                                        @EmailView(context.Item!.Model.Email)
-                                    }
-                                    else
-                                    {
-                                        <MudText>@context.Item?.PropertyValue</MudText>
-                                    }
-                                </CellTemplate> 
-                            </TemplateColumn>
-                        </Columns>
-                    </MudDataGrid>
+                                }
+                            </MudTd>
+                        </RowTemplate>
+                    </MudTable>
                 </MudHidden>
             </MudCardContent>
         </MudCard>
@@ -61,10 +87,11 @@
     private const string WebsiteColumnName = "Website:";
     private const string EmailColumnName = "Email:";
 
-    private record RowViewModel(string Property, string PropertyValue, Business Model);
+    private record RowViewModel(string PropertyName, OneOf<string, None> PropertyValue, Business Model);
 
     private RowViewModel[] GetRows(Business business) =>
     [
+        new("Executive:", business.ChiefExecutive.MapT0(value => value), business),
         new("Description:", business.Description, business),
         new("Address:", Print(business.Address), business),
         new("Phone:", Print(business.Phone), business),
@@ -72,10 +99,11 @@
         new(EmailColumnName, Print(business.Email), business)
     ];
 
-    private static string Print(OneOf<Address, None> address) => address.Match(a => a.Value, none => "Unknown");
-    private static string Print(OneOf<Phone, None> phone) => phone.Match(a => a.Value, none => "Unknown");
-    private static string Print(OneOf<Uri, None> website) => website.Match(a => a.AbsoluteUri, none => "Unknown");
-    private static string Print(OneOf<Email, None> email) => email.Match(a => a.Value, none => "Unknown");
+    private static OneOf<string, None> Print(OneOf<Address, None> address) => address.MapT0(a => a.Value);
+    private static OneOf<string, None> Print(OneOf<Phone, None> phone) => phone.MapT0(a => a.Value);
+    private static OneOf<string, None> Print(OneOf<Uri, None> website) => website.MapT0(a => a.AbsoluteUri);
+    private static OneOf<string, None> Print(OneOf<Email, None> email) => email.MapT0(a => a.Value);
+    private static string Print(OneOf<string, None> value) => value.Match(theValue => theValue, none => string.Empty);
 
     private RenderFragment UrlView(OneOf<Uri, None> url) => __builder =>
     {
