@@ -1,9 +1,5 @@
-﻿using System.Text.Json.Serialization;
-
-namespace Evanston;
+﻿namespace Evanston;
 
 public class AppSettings
 {
-    [JsonPropertyName("businesses")]
-    public BusinessDto[] Businesses { get; set; } = [];
 }
