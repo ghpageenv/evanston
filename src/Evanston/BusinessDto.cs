@@ -21,4 +21,7 @@ public class BusinessDto
 
     [JsonPropertyName("email")]
     public string? Email { get; set; }
+
+    [JsonPropertyName("chiefExecutive")]
+    public string? ChiefExecutive { get; set; }
 }
