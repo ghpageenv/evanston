@@ -1,4 +1,5 @@
 using System.Net.Http.Json;
+using System.Runtime.CompilerServices;
 using Blazored.LocalStorage;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
@@ -14,9 +15,8 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 var http = new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) };
 builder.Services.AddScoped(sp => http);
 
-var baseAddress = builder.HostEnvironment.BaseAddress;
-Console.WriteLine($"Base Address: {baseAddress}");
-var appSettings = await http.GetFromJsonAsync<Directory>($"{baseAddress}/api/v1/directory.json?v=1", new System.Text.Json.JsonSerializerOptions() { Converters = { new JsonStringEnumConverter() } });
+var cacheBypass = $"?v={typeof(Program).Assembly.GetName().Version?.ToString(3)}";
+var appSettings = await http.GetFromJsonAsync<Directory>($"{http.BaseAddress.AbsoluteUri}/api/v1/directory.json{cacheBypass}", new System.Text.Json.JsonSerializerOptions() { Converters = { new JsonStringEnumConverter() } });
 builder.Services
     .AddSingleton(appSettings ?? new())
     .AddSingleton(new Mappers());
