@@ -14,7 +14,7 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 var http = new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) };
 builder.Services.AddScoped(_ => http);
 
-var cacheBypass = $"?v={typeof(Program).Assembly.GetName().Version?.ToString(3)}2";
+var cacheBypass = $"?v={typeof(Program).Assembly.GetName().Version?.ToString(3)}";
 var appSettings = await http.GetFromJsonAsync<Directory>($"{http.BaseAddress.AbsoluteUri}/api/v1/directory.json{cacheBypass}", new System.Text.Json.JsonSerializerOptions() { Converters = { new JsonStringEnumConverter() } });
 builder.Services
     .AddSingleton(appSettings ?? new())
