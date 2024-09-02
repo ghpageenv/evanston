@@ -13,6 +13,7 @@ public partial class Mappers
             dto.Description,
             dto.Phone != null ? Phone.From(dto.Phone) : new None(),
             dto.Address != null ? Address.From(dto.Address) : new None(),
-            Uri.IsWellFormedUriString(dto.Website, UriKind.Absolute) ? new Uri(dto.Website) : new None());
+            Uri.IsWellFormedUriString(dto.Website, UriKind.Absolute) ? new Uri(dto.Website) : new None(),
+            !string.IsNullOrWhiteSpace(dto.Email) ? Email.From(dto.Email) : new None());
     }
 }

@@ -2,7 +2,7 @@
 @using Evanston.Component
 @using OneOf
 @using OneOf.Types
-@inject AppSettings AppSettings
+@inject Directory Directory
 @inject Mappers Mappers
 
 <PageTitle>Black Businesses | Ace Mega School of Evanston</PageTitle>
@@ -14,7 +14,7 @@
 </style>
 
 <MudStack Spacing="3">
-    @foreach (var business in AppSettings.Businesses.Select(b => Mappers.BusinessDtoToModel(b)))
+    @foreach (var business in Directory.Businesses.Select(b => Mappers.BusinessDtoToModel(b)))
     {
         <MudCard Outlined="true">
             <MudCardHeader><MudText Typo="Typo.h6">@business.Name</MudText></MudCardHeader>
@@ -26,6 +26,7 @@
                         <MudText Align="Align.Center">Address:<br/>@Print(business.Address)</MudText>
                         <MudText Align="Align.Center">Phone:<br />@Print(business.Phone)</MudText>
                         <MudText Align="Align.Center">Website:<br />@UrlView(business.Website)</MudText>
+                        <MudText Align="Align.Center">Email:<br />@EmailView(business.Email)</MudText>
                     </MudStack>
                 </MudHidden>
                 <MudHidden Breakpoint="@BreakPoint" Invert="true">
@@ -37,6 +38,10 @@
                                     @if (context.Item?.Property == WebsiteColumnName)
                                     {
                                         @UrlView(context.Item!.Model.Website)
+                                    }
+                                    else if (context.Item?.Property == EmailColumnName)
+                                    {
+                                        @EmailView(context.Item!.Model.Email)
                                     }
                                     else
                                     {
@@ -54,27 +59,41 @@
 @code{
     private const Breakpoint BreakPoint = Breakpoint.MdAndUp;
     private const string WebsiteColumnName = "Website:";
+    private const string EmailColumnName = "Email:";
 
-    private record RowViewModel(string Property, string PropertyValue, Business Model) { public RenderFragment? View { get; set; } };
+    private record RowViewModel(string Property, string PropertyValue, Business Model);
 
     private RowViewModel[] GetRows(Business business) =>
-        new RowViewModel[]
-        {
-            new("Description:", business.Description, business),
-            new("Address:", Print(business.Address), business),
-            new("Phone:", Print(business.Phone), business),
-            new(WebsiteColumnName, Print(business.Website), business) { View = UrlView(business.Website)}
-        };
+    [
+        new("Description:", business.Description, business),
+        new("Address:", Print(business.Address), business),
+        new("Phone:", Print(business.Phone), business),
+        new(WebsiteColumnName, Print(business.Website), business),
+        new(EmailColumnName, Print(business.Email), business)
+    ];
 
     private static string Print(OneOf<Address, None> address) => address.Match(a => a.Value, none => "Unknown");
     private static string Print(OneOf<Phone, None> phone) => phone.Match(a => a.Value, none => "Unknown");
     private static string Print(OneOf<Uri, None> website) => website.Match(a => a.AbsoluteUri, none => "Unknown");
+    private static string Print(OneOf<Email, None> email) => email.Match(a => a.Value, none => "Unknown");
 
     private RenderFragment UrlView(OneOf<Uri, None> url) => __builder =>
     {
         if (url.TryPickT0(out var urlValue, out _))
         {
             <ExternalLink Href="@urlValue.AbsoluteUri">@urlValue.AbsoluteUri</ExternalLink>
+        }
+        else
+        {
+            <MudText>Unknown</MudText>
+        }
+    };
+
+    private RenderFragment EmailView(OneOf<Email, None> email) => __builder =>
+    {
+        if (email.TryPickT0(out var emailValue, out _))
+        {
+            <MudLink Href="@($"mailto:{emailValue}")">@emailValue</MudLink>
         }
         else
         {
