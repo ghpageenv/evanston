@@ -18,4 +18,7 @@ public class BusinessDto
 
     [JsonPropertyName("phone")]
     public string? Phone { get; set; }
+
+    [JsonPropertyName("email")]
+    public string? Email { get; set; }
 }
