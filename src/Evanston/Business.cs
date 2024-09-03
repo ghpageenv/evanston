@@ -15,6 +15,7 @@ public record Business(
     OneOf<Address, None> Address,
     OneOf<Uri, None> Website,
     OneOf<Email, None> Email,
-    OneOf<string, None> ChiefExecutive)
+    OneOf<string, None> ChiefExecutive,
+    BusinessCategory[] Categories)
 {
 }

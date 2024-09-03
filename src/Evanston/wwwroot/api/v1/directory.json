@@ -3,20 +3,23 @@
     {
       "name": "African American History and Genealogical Study Group of Evanston",
       "description": "Began in 2005.  Meets twice monthly, every other Tuesday evening, at the Levy center discussing African-American history and genealogy.",
-      "address": "300 Dodge Ave., Levy Center  Evanston 60202"
+      "address": "300 Dodge Ave., Levy Center  Evanston 60202",
+      "categories": [ "Black", "ArtsCultureEntertainment" ]
     },
     {
       "name": "Blaze the Floor Dance Studio",
       "description": "The studio provides dance instruction to children and adults.  Several types of dance instruction are offered:  Ballroom, Latin, Latin American, Special Event Choreography",
       "address": "300 Dodge Ave., Levy Center, Evanston 60202",
-      "phone": "(847) 868-0072"
+      "phone": "(847) 868-0072",
+      "categories": [ "Black", "ArtsCultureEntertainment" ]
     },
     {
       "name": "Fleetwood-Jourdain Theater",
       "description": "From original plays to the best of Broadway, Fleetwood-Jourdain Theater is committed to supplying the very best in theater.",
       "address": "1101 Davis St., Evanston 60201",
       "phone": "(847) 866-5915",
-      "website": "https://www.cityofevanston.org/about-evanston/arts-and-culture/theatre/fleetwood-jourdain-theatre"
+      "website": "https://www.cityofevanston.org/about-evanston/arts-and-culture/theatre/fleetwood-jourdain-theatre",
+      "categories": [ "Black", "ArtsCultureEntertainment" ]
     },
     {
       "name": "Shorefront Legacy Center",
@@ -24,17 +27,32 @@
       "address": "2214 Ridge Ave. Evanston 60201",
       "phone": "(847) 864-7467",
       "website": "https://shorefrontlegacy.org/",
-      "email": "shorefront@me.com"
+      "email": "shorefront@me.com",
+      "categories": [ "Black", "ArtsCultureEntertainment" ]
     },
     {
       "name": "A.G. Tuckpointing",
       "chiefExecutive": "Antwan Green, owner",
-      "phone": "(773) 458-9527"
+      "phone": "(773) 458-9527",
+      "categories": [ "Black", "BuildingAndConstruction" ]
     },
     {
       "name": "B & B Handyman Services",
       "chiefExecutive": "Willie Brown, owner",
-      "phone": "(773) 706-8861"
+      "phone": "(773) 706-8861",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "Chuck's Refrigeration",
+      "chiefExecutive": "Charles Perrin",
+      "phone": "(847) 561-9413",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "Evanston Community Development Corp.",
+      "chiefExecutive": "Cherylette Hilton",
+      "phone": "(847) 269-7073",
+      "categories": [ "Black", "BuildingAndConstruction" ]
     }
   ]
 }
