@@ -24,4 +24,7 @@ public class BusinessDto
 
     [JsonPropertyName("chiefExecutive")]
     public string? ChiefExecutive { get; set; }
+
+    [JsonPropertyName("categories")]
+    public BusinessCategory[] Categories { get; set; } = [];
 }

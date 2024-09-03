@@ -13,73 +13,89 @@
     }
 </style>
 
+<Centered>
+    <MudChipSet T="BusinessCategory" @bind-SelectedValues="_selectedCategories" SelectionMode="SelectionMode.MultiSelection" CheckMark="true">
+        @foreach (var category in Categories)
+        {
+            <MudChip Value="@category.Category" Text="@(category.Description)" Color="Color.Primary" SelectedColor="Color.Secondary" />
+        }
+    </MudChipSet>
+</Centered>
+<br/>
+<br/>
 <MudStack Spacing="3">
     @foreach (var business in Directory.Businesses.Select(b => Mappers.BusinessDtoToModel(b)))
     {
-        <MudCard Outlined="true">
-            <MudCardHeader><MudText Typo="Typo.h6">@business.Name</MudText></MudCardHeader>
-            <MudCardContent>
-                <MudHidden Breakpoint="@BreakPoint">
-                    <MudStack Spacing="6">
-                        @if (business.Description.TryPickT0(out var description, out _))
-                        {
-                            <MudText><Centered>Description:</Centered><br/>@Print(description)</MudText>
-                            <br/>
-                        }
-                        @if (business.Address.TryPickT0(out var address, out _))
-                        {
-                            <MudText Align="Align.Center">Address:<br/>@Print(Print(address))</MudText>
-                        }
-                        @if (business.Phone.TryPickT0(out var phone, out _))
-                        {
-                            <MudText Align="Align.Center">Phone:<br/>@Print(Print(phone))</MudText>
-                        }
-                        @if (business.Website.TryPickT0(out var website, out _))
-                        {
-                            <MudText Align="Align.Center">Website:<br/>@UrlView(website)</MudText>
-                        }
-                        @if (business.Email.TryPickT0(out var email, out _))
-                        {
-                            <MudText Align="Align.Center">Email:<br/>@EmailView(email)</MudText>
-                        }
-                    </MudStack>
-                </MudHidden>
-                <MudHidden Breakpoint="@BreakPoint" Invert="true">
-                    <MudTable Items="@GetRows(business).Where(row => row.PropertyValue.IsT0)" Hover="true" Breakpoint="Breakpoint.None" RowClass="no-borders">
-                        <RowTemplate>
-                            <MudTd Style="text-align:right; vertical-align:top; width:60px;"><MudText>@context.PropertyName</MudText></MudTd>
-                            <MudTd>
-                                @if (context.PropertyValue.TryPickT0(out var propertyValue, out _))
-                                {
-                                    switch (context.PropertyName)
+        <div style="display:@(!_selectedCategories.Any() || _selectedCategories.All(c => business.Categories.Contains(c)) ? "block" : "none");">
+            <MudCard Outlined="true">
+                <MudCardHeader><MudText Typo="Typo.h6">@business.Name</MudText></MudCardHeader>
+                <MudCardContent>
+                    <MudHidden Breakpoint="@BreakPoint">
+                        <MudStack Spacing="6">
+                            @if (business.Description.TryPickT0(out var description, out _))
+                            {
+                                <MudText><Centered>Description:</Centered><br/>@Print(description)</MudText>
+                                <br/>
+                            }
+                            @if (business.ChiefExecutive.TryPickT0(out var executive, out _))
+                            {
+                                <MudText Align="Align.Center">Executive:<br />@Print(executive)</MudText>
+                            }
+                            @if (business.Address.TryPickT0(out var address, out _))
+                            {
+                                <MudText Align="Align.Center">Address:<br/>@Print(Print(address))</MudText>
+                            }
+                            @if (business.Phone.TryPickT0(out var phone, out _))
+                            {
+                                <MudText Align="Align.Center">Phone:<br/>@Print(Print(phone))</MudText>
+                            }
+                            @if (business.Website.TryPickT0(out var website, out _))
+                            {
+                                <MudText Align="Align.Center">Website:<br/>@UrlView(website)</MudText>
+                            }
+                            @if (business.Email.TryPickT0(out var email, out _))
+                            {
+                                <MudText Align="Align.Center">Email:<br/>@EmailView(email)</MudText>
+                            }
+                        </MudStack>
+                    </MudHidden>
+                    <MudHidden Breakpoint="@BreakPoint" Invert="true">
+                        <MudTable Items="@GetRows(business).Where(row => row.PropertyValue.IsT0)" Hover="true" Breakpoint="Breakpoint.None" RowClass="no-borders">
+                            <RowTemplate>
+                                <MudTd Style="text-align:right; vertical-align:top; width:60px;"><MudText>@context.PropertyName</MudText></MudTd>
+                                <MudTd>
+                                    @if (context.PropertyValue.TryPickT0(out var propertyValue, out _))
                                     {
-                                        case WebsiteColumnName:
-                                            @if (context.Model.Website.TryPickT0(out var website, out _))
-                                            {
-                                                <ExternalLink Href="@website.AbsoluteUri">@website.AbsoluteUri</ExternalLink>
-                                            }
+                                        switch (context.PropertyName)
+                                        {
+                                            case WebsiteColumnName:
+                                                @if (context.Model.Website.TryPickT0(out var website, out _))
+                                                {
+                                                    <ExternalLink Href="@website.AbsoluteUri">@website.AbsoluteUri</ExternalLink>
+                                                }
 
-                                            break;
+                                                break;
 
-                                        case EmailColumnName:
-                                            if (context.Model.Email.TryPickT0(out var emailValue, out _))
-                                            {
-                                                <MudLink Href="@($"mailto:{emailValue}")">@emailValue</MudLink>
-                                            }
+                                            case EmailColumnName:
+                                                if (context.Model.Email.TryPickT0(out var emailValue, out _))
+                                                {
+                                                    <MudLink Href="@($"mailto:{emailValue}")">@emailValue</MudLink>
+                                                }
 
-                                            break;
+                                                break;
 
-                                        default:
-                                            <MudText>@propertyValue</MudText>
-                                            break;
+                                            default:
+                                                <MudText>@propertyValue</MudText>
+                                                break;
+                                        }
                                     }
-                                }
-                            </MudTd>
-                        </RowTemplate>
-                    </MudTable>
-                </MudHidden>
-            </MudCardContent>
-        </MudCard>
+                                </MudTd>
+                            </RowTemplate>
+                        </MudTable>
+                    </MudHidden>
+                </MudCardContent>
+            </MudCard>
+        </div>
     }
 </MudStack>
 @code{
@@ -88,6 +104,8 @@
     private const string EmailColumnName = "Email:";
 
     private record RowViewModel(string PropertyName, OneOf<string, None> PropertyValue, Business Model);
+
+    private IReadOnlyCollection<BusinessCategory> _selectedCategories = [];
 
     private RowViewModel[] GetRows(Business business) =>
     [
@@ -128,4 +146,11 @@
             <MudText>Unknown</MudText>
         }
     };
+
+    private static readonly (BusinessCategory Category, string Description)[] Categories =
+    [
+        (BusinessCategory.Black, "Black"),
+        (BusinessCategory.ArtsCultureEntertainment, "Arts/Culture/Entertainment"),
+        (BusinessCategory.BuildingAndConstruction, "Building & Construction")
+    ];
 }
