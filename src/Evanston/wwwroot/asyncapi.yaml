@@ -1,0 +1,179 @@
+asyncapi: '2.6.0'
+info:
+  title: Ace Mega School Municipal Directory
+  version: '0.1.0'
+  description: |
+    A directory of local municipal resources.
+
+    ### Check out its awesome features:
+
+    * Business Directory
+  license:
+    name: GPL-3.0
+    url: https://www.gnu.org/licenses/gpl-3.0.html
+
+servers:
+  production:
+    url: https://acemegaschool.github.io/evanston/api/v1
+    description: Production server
+    protocol: https
+
+defaultContentType: application/json
+
+channels:
+  /directory.json:
+    publish:
+      summary: Get municipality organizations
+      operationId: getOrgs
+      message:
+        messageId: 'getOrgsMessage'
+        payload:
+          type: object
+          properties:
+            name:
+              type: string
+              description: The name of the business
+            email:
+              type: string
+              format: email
+              description: The email address of the business
+            address:
+              type: string
+              description: The physical address of the business
+            website:
+              type: string
+              description: The website of the business
+            phone:
+              type: string
+              description: The business phone number
+            chiefExecutive:
+              type: string
+              description: The chief executive of the business
+            categories:
+              type: array
+              enum: ['Black', 'ArtsCultureEntertainment', 'BuildingAndConstruction']
+
+  /users/{userId}:
+    parameters:
+      userId:
+        description: The ID of the user
+        schema:
+          type: string
+    publish:
+      summary: Get user details
+      operationId: getUser
+      message:
+        messageId: 'getUserMessage'
+        traits:
+          - headers:
+              type: object
+              properties:
+                Authorization:
+                  type: string
+                  description: Bearer token for authentication
+        payload:
+          type: object
+          properties:
+            name:
+              type: string
+              description: The name of the user
+            email:
+              type: string
+              format: email
+              description: The email address of the user
+
+components:
+  messages:
+    lightMeasured:
+      name: lightMeasured
+      title: Light measured
+      summary: Inform about environmental lighting conditions of a particular streetlight.
+      contentType: application/json
+      traits:
+        - $ref: '#/components/messageTraits/commonHeaders'
+      payload:
+        $ref: "#/components/schemas/lightMeasuredPayload"
+    turnOnOff:
+      name: turnOnOff
+      title: Turn on/off
+      summary: Command a particular streetlight to turn the lights on or off.
+      traits:
+        - $ref: '#/components/messageTraits/commonHeaders'
+      payload:
+        $ref: "#/components/schemas/turnOnOffPayload"
+    dimLight:
+      name: dimLight
+      title: Dim light
+      summary: Command a particular streetlight to dim the lights.
+      traits:
+        - $ref: '#/components/messageTraits/commonHeaders'
+      payload:
+        $ref: "#/components/schemas/dimLightPayload"
+
+  schemas:
+    lightMeasuredPayload:
+      type: object
+      properties:
+        lumens:
+          type: integer
+          minimum: 0
+          description: Light intensity measured in lumens.
+        sentAt:
+          $ref: "#/components/schemas/sentAt"
+    turnOnOffPayload:
+      type: object
+      properties:
+        command:
+          type: string
+          enum:
+            - on
+            - off
+          description: Whether to turn on or off the light.
+        sentAt:
+          $ref: "#/components/schemas/sentAt"
+    dimLightPayload:
+      type: object
+      properties:
+        percentage:
+          type: integer
+          description: Percentage to which the light should be dimmed to.
+          minimum: 0
+          maximum: 100
+        sentAt:
+          $ref: "#/components/schemas/sentAt"
+    sentAt:
+      type: string
+      format: date-time
+      description: Date and time when the message was sent.
+
+  securitySchemes:
+    saslScram:
+      type: scramSha256
+      description: Provide your username and password for SASL/SCRAM authentication
+    certs:
+      type: X509
+      description: Download the certificate files from service provider
+
+  parameters:
+    streetlightId:
+      description: The ID of the streetlight.
+      schema:
+        type: string
+
+  messageTraits:
+    commonHeaders:
+      headers:
+        type: object
+        properties:
+          my-app-header:
+            type: integer
+            minimum: 0
+            maximum: 100
+
+  operationTraits:
+    kafka:
+      bindings:
+        kafka:
+          clientId:
+            type: string
+            enum: ['my-app-id']
