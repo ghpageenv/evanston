@@ -59,6 +59,111 @@
       "chiefExecutive": "Lee Jonas, owner",
       "phone": "(847) 858-1680",
       "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "M & M Heating & Cooling, Inc.",
+      "chiefExecutive": "Michael Marques, owner",
+      "phone": "(773) 606-2416",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "McFadden Construction & Welding",
+      "chiefExecutive": "Jessie McFadden, owner",
+      "phone": "(847) 492-9537",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "R & L Electric",
+      "chiefExecutive": "Roy Lawners, owner",
+      "phone": "(847) 644-4677",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "C & B Construction",
+      "chiefExecutive": "Clifford Washington, owner",
+      "phone": "(847) 331-7965",
+      "email": "Cliffordwashington66@yahoo.com",
+      "address": "1142 Florence Ave., Evanston 60202",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "Cath Associates, Inc.",
+      "chiefExecutive": "Frantz Cartright, owner",
+      "phone": "(847) 332-2600",
+      "email": "fcartright@cathinc.com",
+      "description": "Construction, Facility, Management, Project",
+      "address": "2401 Main St. Evanston 60202",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "Community Builders of Evanston",
+      "chiefExecutive": "William Smith, owner",
+      "description": "General contractor",
+      "phone": "(847) 529-1628",
+      "email": "wbysmith@gmail.com",
+      "address": "1233 Hartrey Ave. Evanston 60202",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "Diggs & Diggs Painting",
+      "chiefExecutive": "MacArthur Diggs, owner",
+      "phone": "(847) 864-2916",
+      "address": "1925 Darrow  Ave. Evanston 60201",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "Don Woods Decorating, Inc.",
+      "chiefExecutive": "Don Woods, owner",
+      "description": "General contractor.  Specializes in carpentry, drywall, interior design, interior and exterior painting; plastering & clean-out",
+      "phone": "(847) 337-7528",
+      "email": "jasonfransom@yahoo.com",
+      "address": "9200 East Prairie Rd. Evanston 60203",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "Kelvin Company, LLC",
+      "chiefExecutive": "Paul Boynton, owner",
+      "description": "Concrete Contractor.  The company specializes in commercial and residential foundations, flat work, excavation, custom stamping and colored decorative concrete.",
+      "phone": "(847) 404-1695",
+      "email": "info@kelvincompany.com",
+      "website": "https://www.kelvincompany.com/",
+      "address": "2150 Ashland Ave. Evanston 60201",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "PDQ Construction, Inc.",
+      "chiefExecutive": "Calvin Lynn, owner",
+      "description": "Established in 2005.  Contractor. Services include: remodeling, carpentry, electrical, painting, plumbing, siding, windows, doors.",
+      "phone": "(847) 791-7183",
+      "email": "pdq_cal@sbcglobal.net",
+      "address": "424 South Blvd. Evanston 60202",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "Priority Management Services, LLC",
+      "chiefExecutive": "Pete Eason, owner",
+      "description": "General contractor",
+      "phone": "(847) 343-0203",
+      "email": "easonconstruction1@gmail.com",
+      "address": "3329 Church St. Evanston 60203",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "True Power Electric",
+      "chiefExecutive": "Dion Jones, owner",
+      "description": "Electrician.  True Power Electric strives to meet the customer's needs.  Their reputation is based on safety, service, and quality regardless of how large or small the job.",
+      "phone": "(847) 477-3230",
+      "email": "truepowere@hotmail.com",
+      "address": "9020 Ewing Ave. Evanston 60203",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "Turf Care Landscaping, Inc.",
+      "description": "Landscape contractors.  Certified DBE",
+      "phone": "(847) 475-1677",
+      "email": "connie@turfcareinc.com",
+      "address": "1801 Darrow Ave. Evanston 60202",
+      "categories": [ "Black", "BuildingAndConstruction" ]
     }
   ]
 }
