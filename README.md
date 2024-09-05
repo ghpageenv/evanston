@@ -5,7 +5,10 @@
 
 Visit site @ https://acemegaschool.github.io/evanston
 
-Directory API @ https://acemegaschool.github.io/evanston/api/v1/directory.json
+Directory
+* API - https://acemegaschool.github.io/evanston/api/v1/directory.json
+* API Spec - https://acemegaschool.github.io/evanston/api-spec.yaml
+* API Spec Viewer - https://acemegaschool.github.io/swagger (load API spec above)
 
 # How to Fork
 1. Fork this repository with the name: `your_user_name | your_organization_name`.github.io
