@@ -164,6 +164,26 @@
       "email": "connie@turfcareinc.com",
       "address": "1801 Darrow Ave. Evanston 60202",
       "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "American Defensive Driving School",
+      "chiefExecutive": "Doug Whitmore, owner",
+      "description": "Whether an experienced driver or looking to become a new member of the driving community, a program can be designed for each individual.",
+      "phone": "(847) 425-1640",
+      "email": "doug@beasafedriver.com",
+      "website": "https://www.beasafedriver.com",
+      "address": "1640 Orrington Ave. Evanston 60201",
+      "categories": [ "Black", "BusProServices" ]
+    },
+    {
+      "name": "N. B. Allen & Associates, Ltd.",
+      "chiefExecutive": "Neville Allen, owner",
+      "description": "N.B. Allen & Associates, Ltd. was established as an Illinois accounting firm to provide accounting, tax, financial and business advisory services to corporations, small businesses and individuals.  Allen has more than 22 years of diverse experiences.",
+      "phone": "(847) 675-0055",
+      "email": "info@nballen.com",
+      "website": "https://www.nballen.com",
+      "address": "4350 Oakton St., #203 Skokie 60076",
+      "categories": [ "Black", "BusProServices" ]
     }
   ]
 }
