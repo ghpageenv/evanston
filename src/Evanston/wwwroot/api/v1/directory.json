@@ -184,6 +184,78 @@
       "website": "https://www.nballen.com",
       "address": "4350 Oakton St., #203 Skokie 60076",
       "categories": [ "Black", "BusProServices" ]
+    },
+    {
+      "name": "Desmond A. Taylor & Associates, CPA, Ltd.",
+      "description": "Desmond manages all operations including, but not limited to business development, alliances, human resources, billing, client projects and more.",
+      "phone": "847-859-6328",
+      "email": "ctaylor@dta-cpa.com",
+      "website": "https://www.dta-cpa.com",
+      "address": "P. O. Box 5790 Evanston 60204",
+      "categories": [ "Black", "BusProServices" ]
+    },
+    {
+      "name": "InSync Data Systems",
+      "chiefExecutive": "Paul Mark Wallace, Chef Integrator",
+      "description": "InSync is a privately held company, and is a single location business. Computer software systems analysis and design, custom' computer programming.",
+      "phone": "(847) 328-9905",
+      "address": "1560 Dewey Ave. #341 Evanston 60202",
+      "categories": [ "Black", "BusProServices" ]
+    },
+    {
+      "name": "Leonore E. Carlson, Attorney",
+      "description": "Criminal Attorney",
+      "phone": "(314) 412-8701",
+      "email": "Leonore.E.Carlson@gmail.com",
+      "address": "2000 Valley Lo Ln. Glenview 60025",
+      "categories": [ "Black", "BusProServices" ]
+    },
+    {
+      "name": "Path Press, Inc.",
+      "chiefExecutive": "Bennett J. Johnson, President",
+      "description": "Path Press, Inc. provides opportunity for persons of African descent to write and publish their stories and ideas.",
+      "phone": "(847) 492-0177",
+      "email": "pathpressinc@aol.com",
+      "address": "708 Washington St. Evanston 60202",
+      "categories": [ "Black", "BusProServices" ]
+    },
+    {
+      "name": "Parker and Sons Carpet Cleaning Services",
+      "phone": "(888) 947-2753",
+      "address": "1531 Cleveland Street, Evanston 60202",
+      "categories": [ "Black", "BusProServices" ]
+    },
+    {
+      "name": "Research Explorers, Inc.",
+      "chiefExecutive": "Lisa McDonald, owner",
+      "description": "Qualitative Research Consultants (QRC).  QRC explores with businesses such questions as: “Does your brand need a makeover?  Why are people not buying from you?”",
+      "phone": "(847) 853-0237",
+      "email": "Lisa@researchexplorers.com",
+      "website": "https://researchexplorers.com",
+      "address": "111 New Trier Ct. Wilmette 60091",
+      "categories": [ "Black", "BusProServices" ]
+    },
+    {
+      "name": "Rich Foreman Photography",
+      "chiefExecutive": "Rich Foreman, Owner",
+      "description": "An expert event, commercial, portrait photographer with natural people skills, and 20 years of experience.  His studio is available for rental.",
+      "phone": "(847) 864-4549",
+      "address": "939 Sherman Ave. Evanston 60202",
+      "categories": [ "Black", "BusProServices" ]
+    },
+    {
+      "name": "Horton Janitorial Service",
+      "chiefExecutive": "Todd M. Horton",
+      "description": "Windows and custodial services for home and business",
+      "phone": "(847) 596-1360",
+      "address": "1331 Cleveland, Evanston 60202",
+      "categories": [ "Black", "BusProServices" ]
+    },
+    {
+      "name": "Budget/Avis Car Rental",
+      "phone": "(847) 864-6661",
+      "address": "801 Chicago Avenue, Evanston 60202",
+      "categories": [ "Black", "BusProServices" ]
     }
   ]
 }
