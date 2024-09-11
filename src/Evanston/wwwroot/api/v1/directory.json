@@ -28,7 +28,7 @@
       "phone": "(847) 864-7467",
       "website": "https://shorefrontlegacy.org/",
       "email": "shorefront@me.com",
-      "categories": [ "Black", "ArtsCultureEntertainment" ]
+      "categories": [ "Black", "ArtsCultureEntertainment", "FamComCiv" ]
     },
     {
       "name": "A.G. Tuckpointing",
@@ -299,6 +299,33 @@
       "email": "sheiscode@gmail.com",
       "address": "1655 Foster  Evanston  60201",
       "categories": [ "Black", "Education" ]
+    },
+    {
+      "name": "Evanston Branch NAACP",
+      "chiefExecutive": "Rev. Michael C. R. Nabors, President",
+      "description": "The Branch meets on the 3rd Tuesday of each month, 7:30 pm.",
+      "phone": "(847) 864-0038",
+      "email": "naacpev@aol.com",
+      "address": "2010 Dewey Ave. #302A Evanston 60201",
+      "categories": [ "Black", "FamComCiv" ]
+    },
+    {
+      "name": "Krissie Harris, 2nd Ward Alderperson",
+      "categories": [ "Black", "FamComCiv" ]
+    },
+    {
+      "name": "Bobby Burns, 5th Ward Alderperson",
+      "categories": [ "Black", "FamComCiv" ]
+    },
+    {
+      "name": "",
+      "chiefExecutive": "",
+      "description": "",
+      "phone": "",
+      "email": "",
+      "website": "",
+      "address": "",
+      "categories": [ "Black", "FamComCiv" ]
     }
   ]
 }
