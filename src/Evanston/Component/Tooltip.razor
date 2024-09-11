@@ -1,0 +1,22 @@
+﻿@using OneOf
+@using OneOf.Types
+@inherits ComponentBase
+
+<MudTooltip @bind-Visible="_showTooltip" ShowOnClick="false" ShowOnFocus="false" ShowOnHover="false" Placement="Placement.Bottom">
+    <ChildContent>
+        <div @onclick="() => { Command.Switch(action => action.Invoke(), none => { }); _showTooltip = true; }">@ChildContent</div>
+    </ChildContent>
+    <TooltipContent>
+        <MudText @onclick="() => _showTooltip = false">@Text.Match(value => value, none => string.Empty)</MudText>
+    </TooltipContent>
+</MudTooltip>
+
+@code {
+    private bool _showTooltip;
+
+    [Parameter]
+    public OneOf<string, None> Text { get; set; } = new None();
+
+    [Parameter]
+    public OneOf<Action, None> Command { get; set; } = new None();
+}
