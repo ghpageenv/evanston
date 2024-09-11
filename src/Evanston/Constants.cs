@@ -7,4 +7,5 @@ public enum BusinessCategory
     ArtsCultureEntertainment = 2,
     BuildingAndConstruction = 3,
     BusProServices = 4,
+    Education = 5,
 }

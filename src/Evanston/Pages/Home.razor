@@ -5,7 +5,7 @@
 @inject Directory Directory
 @inject Mappers Mappers
 
-<PageTitle>Black Businesses | Ace Mega School of Evanston</PageTitle>
+<PageTitle>Businesses | My Evanston</PageTitle>
 
 <style>
     .no-borders > td, .no-borders > tr > th {
@@ -13,6 +13,21 @@
     }
 </style>
 
+<MudText Align="Align.Center">Welcome to the My Evanston Directory, a directory of all Evanston based organizations.  Here's what makes this directory unique:</MudText>
+<br/>
+<Centered>
+    <ul>
+        <li>• Maintainability<MudIconButton OnClick="@(() => _showMaintainabilityDialog = true)" Style="transform: scale(0.5); vertical-align:text-bottom;" Class="mud-theme-primary rounded-circle" Size="Size.Small" Variant="Variant.Filled" Color="Color.Primary" Icon="@Icons.Material.Filled.QuestionMark" /></li>
+        <li>• Usability<MudIconButton OnClick="@(() => _showUsabilityDialog = true)" Style="transform: scale(0.5); vertical-align:text-bottom;" Class="mud-theme-primary rounded-circle" Size="Size.Small" Variant="Variant.Filled" Color="Color.Primary" Icon="@Icons.Material.Filled.QuestionMark" /></li>
+        <li>• Accessibility<MudIconButton OnClick="@(() => _showAccessibilityDialog = true)" Style="transform: scale(0.5); vertical-align:text-bottom;" Class="mud-theme-primary rounded-circle" Size="Size.Small" Variant="Variant.Filled" Color="Color.Primary" Icon="@Icons.Material.Filled.QuestionMark" /></li>
+        <li>• Affordability<MudIconButton OnClick="@(() => _showAffordabilityDialog = true)" Style="transform: scale(0.5); vertical-align:text-bottom;" Class="mud-theme-primary rounded-circle" Size="Size.Small" Variant="Variant.Filled" Color="Color.Primary" Icon="@Icons.Material.Filled.QuestionMark" /></li>
+        <li>• Standardization<MudIconButton OnClick="@(() => _showStandardizationDialog = true)" Style="transform: scale(0.5); vertical-align:text-bottom;" Class="mud-theme-primary rounded-circle" Size="Size.Small" Variant="Variant.Filled" Color="Color.Primary" Icon="@Icons.Material.Filled.QuestionMark" /></li>
+        <li>• Scalability<MudIconButton OnClick="@(() => _showScalabilityDialog = true)" Style="transform: scale(0.5); vertical-align:text-bottom;" Class="mud-theme-primary rounded-circle" Size="Size.Small" Variant="Variant.Filled" Color="Color.Primary" Icon="@Icons.Material.Filled.QuestionMark" /></li>
+    </ul>
+</Centered>
+<br/>
+<MudDivider/>
+<br/>
 <Centered>
     <MudChipSet T="BusinessCategory" @bind-SelectedValues="_selectedCategories" SelectionMode="SelectionMode.MultiSelection" CheckMark="true">
         @foreach (var category in Categories)
@@ -85,7 +100,7 @@
                                                 break;
 
                                             default:
-                                                <MudText>@propertyValue</MudText>
+                                                <MudText>@Print(propertyValue)</MudText>
                                                 break;
                                         }
                                     }
@@ -98,14 +113,73 @@
         </div>
     }
 </MudStack>
-@code{
+
+<MudDialog @bind-Visible="_showAceDialog" Options="@(new DialogOptions() { NoHeader = true })">
+    <DialogContent>
+        <MudStack>
+            <MudText>@AceDescription</MudText>
+            <MudButton OnClick="@(() => _showAceDialog = false)" Class="ml-auto mr-n3 mb-1" Color="Color.Error">Got it!</MudButton>
+        </MudStack> 
+    </DialogContent>
+</MudDialog>
+
+<MudDialog @bind-Visible="_showMaintainabilityDialog" Options="@(new DialogOptions() { NoHeader = true })">
+    <DialogContent>
+        <MudStack>
+            <MudText>The Directory Database will be regularly maintained by Ace<MudIconButton OnClick="@(() => _showAceDialog = true)" Style="transform: scale(0.5); vertical-align:text-bottom;" Class="mud-theme-primary rounded-circle" Size="Size.Small" Variant="Variant.Filled" Color="Color.Primary" Icon="@Icons.Material.Filled.QuestionMark" />.</MudText>
+            <MudButton OnClick="@(() => _showMaintainabilityDialog = false)" Class="ml-auto mr-n3 mb-1" Color="Color.Error">Got it!</MudButton>
+        </MudStack>
+    </DialogContent>
+</MudDialog>
+
+<MudDialog @bind-Visible="_showUsabilityDialog" Options="@(new DialogOptions() { NoHeader = true })">
+    <DialogContent>
+        <MudStack>
+            <MudText>The Directory Database can be easily viewed on the Directory Website (the website you're currently on!).  It's a user-friendly website regularly maintained by Ace<MudIconButton OnClick="@(() => _showAceDialog = true)" Style="transform: scale(0.5); vertical-align:text-bottom;" Class="mud-theme-primary rounded-circle" Size="Size.Small" Variant="Variant.Filled" Color="Color.Primary" Icon="@Icons.Material.Filled.QuestionMark" />.</MudText>
+            <MudButton OnClick="@(() => _showUsabilityDialog = false)" Class="ml-auto mr-n3 mb-1" Color="Color.Error">Got it!</MudButton>
+        </MudStack>
+    </DialogContent>
+</MudDialog>
+
+<MudDialog @bind-Visible="_showAccessibilityDialog" Options="@(new DialogOptions() { NoHeader = true })">
+    <DialogContent>
+        <MudText>Both the Directory Database and the Directory Website will be <ExternalLink Href="https://gist.github.com/kn9ts/cbe95340d29fc1aaeaa5dd5c059d2e60">perpetually open source</ExternalLink>, meaning they will be free for everyone to use, forever.  No "pay to play" to be added to the directory and no "pay wall" to access the directory.</MudText>
+    </DialogContent>
+</MudDialog>
+
+<MudDialog @bind-Visible="_showAffordabilityDialog" Options="@(new DialogOptions() { NoHeader = true })">
+    <DialogContent>
+        <MudText>Ace@(AceTooltip()) will permanently manage all aspects of the directory.  They will receive a stipend for maintaining the directory.  The stipend will be funded by the businesses in the directory via a contribution of $1/mo, or $12/year.  Ace strictly follows the honor system and no one will be denied directory listing due to non-contribution.</MudText>
+    </DialogContent>
+</MudDialog>
+
+<MudDialog @bind-Visible="_showStandardizationDialog" Options="@(new DialogOptions() { NoHeader = true })">
+    <DialogContent>
+        <MudText>The Directory Database has a <ExternalLink Href="https://acemegaschool.github.io/swagger/">documented standard format</ExternalLink>.  This means any local community can start building and sharing their directory across the nation TODAY!</MudText>
+    </DialogContent>
+</MudDialog>
+
+<MudDialog @bind-Visible="_showScalabilityDialog" Options="@(new DialogOptions() { NoHeader = true })">
+    <DialogContent>
+        <MudText>Both the Directory Database & Website can easily combine with other local community directories to build state and national directories.  This is possible due to its standardized and open source format.</MudText>
+    </DialogContent>
+</MudDialog>
+@code {
     private const Breakpoint BreakPoint = Breakpoint.MdAndUp;
     private const string WebsiteColumnName = "Website:";
     private const string EmailColumnName = "Email:";
+    private const string AceDescription = "Ace is a school exclusively owned and controlled by local teens (13-18).";
 
     private record RowViewModel(string PropertyName, OneOf<string, None> PropertyValue, Business Model);
 
     private IReadOnlyCollection<BusinessCategory> _selectedCategories = [];
+    private bool _showMaintainabilityDialog;
+    private bool _showAccessibilityDialog;
+    private bool _showAffordabilityDialog;
+    private bool _showUsabilityDialog;
+    private bool _showScalabilityDialog;
+    private bool _showStandardizationDialog;
+    private bool _showAceDialog;
 
     private RowViewModel[] GetRows(Business business) =>
     [
@@ -121,7 +195,12 @@
     private static OneOf<string, None> Print(OneOf<Phone, None> phone) => phone.MapT0(a => a.Value);
     private static OneOf<string, None> Print(OneOf<Uri, None> website) => website.MapT0(a => a.AbsoluteUri);
     private static OneOf<string, None> Print(OneOf<Email, None> email) => email.MapT0(a => a.Value);
-    private static string Print(OneOf<string, None> value) => value.Match(theValue => theValue, none => string.Empty);
+    private static MarkupString Print(OneOf<string, None> value) => (MarkupString)value.Match(theValue => theValue, none => string.Empty);
+
+    private RenderFragment AceTooltip() => __builder =>
+    {
+        <MudIconButton OnClick="@(() => _showAceDialog = true)" Style="transform: scale(0.5); vertical-align:text-bottom;" Class="mud-theme-primary rounded-circle" Size="Size.Small" Variant="Variant.Filled" Color="Color.Primary" Icon="@Icons.Material.Filled.QuestionMark" />
+    };
 
     private RenderFragment UrlView(OneOf<Uri, None> url) => __builder =>
     {
@@ -149,9 +228,10 @@
 
     private static readonly (BusinessCategory Category, string Description)[] Categories =
     [
-        (BusinessCategory.Black, "Black"),
         (BusinessCategory.ArtsCultureEntertainment, "Arts/Culture/Entertainment"),
         (BusinessCategory.BuildingAndConstruction, "Building & Construction"),
-        (BusinessCategory.BusProServices, "Business & Professional Services")
+        (BusinessCategory.BusProServices, "Business & Professional Services"),
+        (BusinessCategory.Education, "Education"),
+        (BusinessCategory.Black, "Black"),
     ];
 }

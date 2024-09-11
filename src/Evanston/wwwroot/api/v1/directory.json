@@ -256,6 +256,49 @@
       "phone": "(847) 864-6661",
       "address": "801 Chicago Avenue, Evanston 60202",
       "categories": [ "Black", "BusProServices" ]
+    },
+    {
+      "name": "Mega School",
+      "chiefExecutive": "Jerome Bell, CEO & Founder",
+      "description": "“High school” for adults!  Learn both popular and obscure topics.  Our premier courses are 'Trust Fund&nbsp;<i>My</i>&nbsp; Baby!' and 'Bitcoin for Dummies (and other cryptos)'.",
+      "phone": "224-310-9357",
+      "email": "hello@megaschool1.me",
+      "website": "https://www.ms1.megaschool.me",
+      "categories": [ "Black", "Education" ]
+    },
+    {
+      "name": "BrownBabyReads - Online",
+      "chiefExecutive": "Dawn Eddy, President",
+      "description": "Online bookstore features children's books with African-American and multiracial characters.  It is a non-profit organization with a mission to celebrate, encourage, and promote literacy.",
+      "phone": "(734) 612-5821",
+      "categories": [ "Black", "Education" ]
+    },
+    {
+      "name": "Huntington Learning Center",
+      "chiefExecutive": "Cheryl Reid, owner",
+      "description": "Established in 2003, Huntington Learning Center has been providing students of the North Shore with exceptional tutoring and test prep for over a decade.",
+      "phone": "(847) 675-8600",
+      "website": "https://huntingtonhelps.com",
+      "address": "9418 Skokie Blvd. Skokie 60077",
+      "categories": [ "Black", "Education" ]
+    },
+    {
+      "name": "The Honey Bee Company, LLC",
+      "chiefExecutive": "Rachel O. Williams, owner",
+      "description": "Award winning materials, lessons and training to help K-2nd Grade teachers infuse STEM into early elementary classrooms. Books, games & resources introduce young minds to science and technology.",
+      "phone": "(224) 402-3963",
+      "email": "kelley@paigeandpaxton.com",
+      "website": "https://www.paigeandpaxton.com",
+      "address": "2906 Central St. #258 Evanston 60201",
+      "categories": [ "Black", "Education" ]
+    },
+    {
+      "name": "SHE IS CODE",
+      "chiefExecutive": "Tonya Patterson, Executive Director",
+      "description": "She Is Code creates opportunities for young women and minorities to learn about technology in ways that are engaging and fun.  A 501(c)(3) organization.",
+      "email": "sheiscode@gmail.com",
+      "address": "1655 Foster  Evanston  60201",
+      "categories": [ "Black", "Education" ]
     }
   ]
 }
