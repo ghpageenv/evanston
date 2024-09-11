@@ -143,25 +143,37 @@
 
 <MudDialog @bind-Visible="_showAccessibilityDialog" Options="@(new DialogOptions() { NoHeader = true })">
     <DialogContent>
-        <MudText>Both the Directory Database and the Directory Website will be <ExternalLink Href="https://gist.github.com/kn9ts/cbe95340d29fc1aaeaa5dd5c059d2e60">perpetually open source</ExternalLink>, meaning they will be free for everyone to use, forever.  No "pay to play" to be added to the directory and no "pay wall" to access the directory.</MudText>
+        <MudStack>
+            <MudText>Both the Directory Database and the Directory Website will be <ExternalLink Href="https://gist.github.com/kn9ts/cbe95340d29fc1aaeaa5dd5c059d2e60">perpetually open source</ExternalLink>, meaning they will be free for everyone to use, forever.  No "pay to play" to be added to the directory and no "pay wall" to access the directory.</MudText>
+            <MudButton OnClick="@(() => _showAccessibilityDialog = false)" Class="ml-auto mr-n3 mb-1" Color="Color.Error">Got it!</MudButton>
+        </MudStack>
     </DialogContent>
 </MudDialog>
 
 <MudDialog @bind-Visible="_showAffordabilityDialog" Options="@(new DialogOptions() { NoHeader = true })">
     <DialogContent>
-        <MudText>Ace@(AceTooltip()) will permanently manage all aspects of the directory.  They will receive a stipend for maintaining the directory.  The stipend will be funded by the businesses in the directory via a contribution of $1/mo, or $12/year.  Ace strictly follows the honor system and no one will be denied directory listing due to non-contribution.</MudText>
+        <MudStack>
+            <MudText>Ace@(AceTooltip()) will permanently manage all aspects of the directory.  They will receive a stipend for maintaining the directory.  The stipend will be funded by the businesses in the directory via a contribution of $1/mo, or $12/year.  Ace strictly follows the honor system and no one will be denied directory listing due to non-contribution.</MudText>
+            <MudButton OnClick="@(() => _showAffordabilityDialog = false)" Class="ml-auto mr-n3 mb-1" Color="Color.Error">Got it!</MudButton>
+        </MudStack>
     </DialogContent>
 </MudDialog>
 
 <MudDialog @bind-Visible="_showStandardizationDialog" Options="@(new DialogOptions() { NoHeader = true })">
     <DialogContent>
-        <MudText>The Directory Database has a <ExternalLink Href="https://acemegaschool.github.io/swagger/">documented standard format</ExternalLink>.  This means any local community can start building and sharing their directory across the nation TODAY!</MudText>
+        <MudStack>
+            <MudText>The Directory Database has a <ExternalLink Href="https://acemegaschool.github.io/swagger/">documented standard format</ExternalLink>.  This means any local community can start building and sharing their directory across the nation TODAY!</MudText>
+            <MudButton OnClick="@(() => _showStandardizationDialog = false)" Class="ml-auto mr-n3 mb-1" Color="Color.Error">Got it!</MudButton>
+        </MudStack>
     </DialogContent>
 </MudDialog>
 
 <MudDialog @bind-Visible="_showScalabilityDialog" Options="@(new DialogOptions() { NoHeader = true })">
     <DialogContent>
-        <MudText>Both the Directory Database & Website can easily combine with other local community directories to build state and national directories.  This is possible due to its standardized and open source format.</MudText>
+        <MudStack>
+            <MudText>Both the Directory Database & Website can easily combine with other local community directories to build state and national directories.  This is possible due to its standardized and open source format.</MudText>
+            <MudButton OnClick="@(() => _showScalabilityDialog = false)" Class="ml-auto mr-n3 mb-1" Color="Color.Error">Got it!</MudButton>
+        </MudStack>
     </DialogContent>
 </MudDialog>
 @code {
