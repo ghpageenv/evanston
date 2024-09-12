@@ -9,4 +9,5 @@ public enum BusinessCategory
     BusProServices = 4,
     Education = 5,
     FamComCiv = 6,
+    FinIns = 7,
 }
