@@ -316,6 +316,39 @@
     {
       "name": "Bobby Burns, 5th Ward Alderperson",
       "categories": [ "Black", "FamComCiv" ]
+    },
+    {
+      "name": "Jim Lee-State Farm Insurance",
+      "chiefExecutive": "Jim Lee, owner",
+      "description": "Since 1978, Jim Lee has been working with individuals, businesses and the community offering various types of insurance such as Auto, Home-owners, Renters, Life, and Financial.",
+      "phone": "(847) 328-4630",
+      "email": "Jim@JimLeeinsurance.com",
+      "website": "https://www.jimleeinsurance.com",
+      "address": "721 Dodge Ave. Evanston 60202",
+      "categories": [ "Black", "FinIns" ]
+    },
+    {
+      "name": "Legal Shield",
+      "chiefExecutive": "Rhonda Craven, Independent Associate",
+      "phone": "(773) 606-6532",
+      "categories": [ "Black", "FinIns" ]
+    },
+    {
+      "name": "Robert Reece Insurance & Financial Services",
+      "chiefExecutive": "Robert Reece, owner",
+      "description": "Robert Reece Insurance & Financial Services (RRIFS) is a full-service insurance and financial services agency.  RRIFS determines financial and insurance solutions.",
+      "phone": "(847) 440-5813",
+      "address": "1603 Orrington Ave. Evanston 60201",
+      "categories": [ "Black", "FinIns" ]
+    },
+    {
+      "name": "Terry Performance Group",
+      "chiefExecutive": "Keith Terry, owner",
+      "description": "The Group is designed to provide targeted advisory healthcare and management consulting services to small-and medium-sized organizations and trade associations.",
+      "phone": "(847) 867-1192",
+      "website": "https://terryperformancegroup.com",
+      "address": "1603 Orrington Ave, #600 Evanston 60201",
+      "categories": [ "Black", "FinIns" ]
     }
   ]
 }
