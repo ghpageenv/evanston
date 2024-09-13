@@ -51,4 +51,4 @@ channels:
               description: The chief executive of the business
             categories:
               type: array
-              enum: ['ArtsCultureEntertainment', 'BuildingAndConstruction', 'BusProServices', 'Education', 'Black']
+              enum: ['ArtsCultureEntertainment', 'BuildingAndConstruction', 'BusProServices', 'Education', 'Black', 'FinIns', 'Funeral']
