@@ -364,6 +364,39 @@
       "email": "Thompsonfuneral1917@yahoo.com",
       "address": "1917 Asbury Ave. Evanston 60201",
       "categories": [ "Black", "Funeral" ]
+    },
+    {
+      "name": "Ashley Lauren Hair Institute",
+      "chiefExecutive": "Larry and Georgia Parker, owners",
+      "description": "Ashley Lauren Hair Institute takes pride in manufacturing the finest quality natural hair and skin care products available using the purest botanicals, 100% pure essential oils and herbal extracts that nature has to offer.",
+      "phone": "(847) 733-9470",
+      "email": "alproducts@netzero.net",
+      "website": "https://ashleylaurennaturalproducts.com",
+      "address": "636 Church St. Evanston 60201",
+      "categories": [ "Black", "HealthMedical" ]
+    },
+    {
+      "name": "Dental Art SPECIALISTS",
+      "chiefExecutive": "Drs. Jazmine & Melvin Dillard, III, owners",
+      "description": "Dental Art Specialists is an orthodontic and pediatric dental practice that opened in Evanston August 2015. The Drs. provide a warm, comfortable and fun dental practice.",
+      "phone": "(847) 563-4484",
+      "address": "1964 W. Dempster St. Evanston 60202",
+      "categories": [ "Black", "HealthMedical" ]
+    },
+    {
+      "name": "Skillz Physical Therapy - Evanston",
+      "phone": "(847) 859-6240",
+      "website": "https://skillzpt.com",
+      "address": "839 Dodge Ave, Evanston, IL 60202 ",
+      "categories": [ "Black", "HealthMedical" ]
+    },
+    {
+      "name": "Visiting Angels Living Assistance Services",
+      "chiefExecutive": "Kelly Gilbert, owner/director",
+      "phone": "(847) 424-9300",
+      "email": "visitingangelsofevanston@gmail.com",
+      "address": "518  Davis St, Ste. 208 Evanston, 60201",
+      "categories": [ "Black", "HealthMedical" ]
     }
   ]
 }
