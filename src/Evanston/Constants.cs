@@ -11,4 +11,5 @@ public enum BusinessCategory
     FamComCiv = 6,
     FinIns = 7,
     Funeral = 8,
+    HealthMedical = 9,
 }
