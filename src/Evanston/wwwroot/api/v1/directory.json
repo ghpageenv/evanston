@@ -349,6 +349,21 @@
       "website": "https://terryperformancegroup.com",
       "address": "1603 Orrington Ave, #600 Evanston 60201",
       "categories": [ "Black", "FinIns" ]
+    },
+    {
+      "name": "Haliburton Funeral Chapel",
+      "chiefExecutive": "Nathan Haliburton, owner",
+      "description": "Providing courteous care for our local residents throughout your most trying times.",
+      "phone": "(847) 864-6135",
+      "address": "1317 Emerson St. Evanston 60201",
+      "categories": [ "Black", "Funeral" ]
+    },
+    {
+      "name": "Thompson Funeral/Cremation Services, Inc.",
+      "phone": "(847) 869-3172",
+      "email": "Thompsonfuneral1917@yahoo.com",
+      "address": "1917 Asbury Ave. Evanston 60201",
+      "categories": [ "Black", "Funeral" ]
     }
   ]
 }

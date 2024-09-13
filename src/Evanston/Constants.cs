@@ -10,4 +10,5 @@ public enum BusinessCategory
     Education = 5,
     FamComCiv = 6,
     FinIns = 7,
+    Funeral = 8,
 }
