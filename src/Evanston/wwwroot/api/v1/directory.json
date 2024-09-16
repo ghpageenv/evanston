@@ -397,6 +397,41 @@
       "email": "visitingangelsofevanston@gmail.com",
       "address": "518  Davis St, Ste. 208 Evanston, 60201",
       "categories": [ "Black", "HealthMedical" ]
+    },
+    {
+      "name": "Good News Laundromat",
+      "chiefExecutive": "Jeffrey Kelly, owner",
+      "description": "At Good News Laundry you will find a wholesome atmosphere, quiet enough to study or use the free WI-Fi service.",
+      "phone": "(847) 869-8894",
+      "address": "817 Noyes St. Evanston 60201",
+      "categories": [ "Black", "HomeAndGarden" ]
+    },
+    {
+      "name": "JFI Packaging Group, Inc.",
+      "chiefExecutive": "Jerry W. Lacy, President & CEO",
+      "description": "JFI Packaging Group is a full-service packaging company.  We design, manufacture and convert folding cartons, point-of-purchase displays, instructional inserts and leaflets.",
+      "phone": "(312) 733-5242",
+      "website": "https://jfipackaging.com/index.html",
+      "email": "jerrylacy@jfipackaging.com",
+      "address": "5250 Old Orchard Rd. #300 Skokie 60077",
+      "categories": [ "Black", "Industrial" ]
+    },
+    {
+      "name": "Jackson Movers",
+      "chiefExecutive": "Tony Jackson, owner",
+      "description": "Hauling and delivery service.",
+      "phone": "(224) 223-5457",
+      "email": "Livingvoice21@gmail.com",
+      "address": "P.O. Box 627 Skokie 60076",
+      "categories": [ "Black", "MovingStorage" ]
+    },
+    {
+      "name": "Joey's Movers and Trucking, Inc.",
+      "description": "Joey's Movers provides moving for residential & commercial moves as well as trucking services.",
+      "phone": "(847) 674-7779",
+      "website": "https://joeysmovers.com",
+      "address": "7333 Ridgeway Ave. Skokie 60076",
+      "categories": [ "Black", "MovingStorage" ]
     }
   ]
 }
