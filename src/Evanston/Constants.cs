@@ -12,4 +12,7 @@ public enum BusinessCategory
     FinIns = 7,
     Funeral = 8,
     HealthMedical = 9,
+    HomeAndGarden = 10,
+    Industrial = 11,
+    MovingStorage = 12,
 }
