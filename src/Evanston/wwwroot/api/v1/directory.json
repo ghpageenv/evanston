@@ -432,6 +432,139 @@
       "website": "https://joeysmovers.com",
       "address": "7333 Ridgeway Ave. Skokie 60076",
       "categories": [ "Black", "MovingStorage" ]
+    },
+    {
+      "name": "BAH's Hair Braiding",
+      "chiefExecutive": "Bah Fatoumata, owner",
+      "phone": "(847) 869-7549",
+      "address": "309 W. Howard St. Evanston 60202",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "Church Street Barber Shop",
+      "chiefExecutive": "Sam Johnson, owner",
+      "description": "Church Street Barber Shop is a long-standing Barber Shop located on the west side of Evanston.  African-American men, women and boys have patronized this shop for haircuts over the many years of its existence.  It is a community mainstay.",
+      "phone": "(847) 328-9749",
+      "address": "1905 Church Street Evanston 60201",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "Cutting Edge Hair Gallery",
+      "chiefExecutive": "Donna Walker, owner",
+      "description": "A uni-sex hair salon serving men, women and children. Specializes in cuts, coloring, ethnic hair braiding, eyebrows and lashes, chemical service.",
+      "phone": "(847) 424-1624",
+      "email": "walkerboyd@gmail.com",
+      "address": "3419 Church St, Evanston, IL 60203",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "Dempster Cuts",
+      "phone": "(847) 864-1924",
+      "address": "1805 Dempster St, Evanston, IL 60201",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "Ebony Barber Shop",
+      "description": "Ebony Barber Shop is a long-standing business, providing haircuts & hot shave services.",
+      "phone": "(847) 475-9701",
+      "address": "1702 Dodge Ave. Evanston 60201",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "Divine African Hair Brading",
+      "chiefExecutive": "Marcel Tagro, owner",
+      "email": "tagrowinner@gmail.com",
+      "address": "703 Howard St. Evanston 60202",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "EnvyMe Too Salon",
+      "description": "Hair styling and care, including barber shop.",
+      "phone": "(773) 540-1772",
+      "website": "https://envymehairstudio.com",
+      "email": "hello@envymehairstudio.com",
+      "address": "1914 Main St., Evanston",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "Executive Studio Hair Salon",
+      "description": "A comfortable upscale hair salon for women, men, boys and girls.  The salon has a barber and hair stylists.  Services of a massage therapist are available as well.",
+      "phone": "(847) 570-5822",
+      "email": "Hair_Diva@ameritech.net",
+      "address": "801 Main St. Evanston 60202",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "Hair by Paula Beauty Salon",
+      "phone": "(847) 475-2286",
+      "address": "1829 Emerson St. Evanston 60201",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "HV Salon and Spa",
+      "chiefExecutive": "Delia Vernon and Megon Hopwood, owners",
+      "phone": "(224) 226-2592",
+      "email": "hvee100@gmail.com",
+      "address": "707 A Howard Street, Evanston 60202",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "Ikandi Hair Studio",
+      "description": "Stylists support, enhance, and create beauty, with a focus on healthy hair whether relaxed or natural.",
+      "phone": "(847) 475-2634",
+      "website": "https://www.ikandihairstudio.com",
+      "address": "1705 Central St., Evanston 60201",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "Michele Lamothe Salon",
+      "chiefExecutive": "Michele Lamothe, owner",
+      "phone": "(773) 387-1641",
+      "email": "Michele_lamothe@yahoo.com",
+      "address": "609 Howard Street, Evanston 60202",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "The Lavish Hair Lounge",
+      "chiefExecutive": "Alexandra Nivose & Tanesha Staffney, owner",
+      "email": "(224) 307- 2872",
+      "address": "814 Dempster St., Evanston 60202",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "On Point Hair Salon",
+      "chiefExecutive": "Tenille Flowers, owner",
+      "description": "Quick weaves, sew-ins, braids",
+      "phone": "(847) 424-1266",
+      "website": "https://www.styleseat.com",
+      "address": "329 Howard St., Evanston 60202",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "Studio-SLK",
+      "chiefExecutive": "Sandy Lewis-Kadiri, owner",
+      "description": "Full service salon offering relaxation services from head to toe including manicure and pedicures, and hair care services as well.  Online Reservation system.",
+      "phone": "(847) 868-8353",
+      "website": "http://studio-slk.com",
+      "email": "contact@studio-slk.com",
+      "address": "1934 Maple Ave., Evanston 60201",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "Studio 876 LLC",
+      "chiefExecutive": "Camile Patton, owner",
+      "phone": "(224) 634-0729",
+      "address": "815 Main Street, Evanston",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "Style Rite Beauty Barber Salon",
+      "chiefExecutive": "Styling by Verona",
+      "description": "We do braids of all kind.",
+      "phone": "(847) 475-8100",
+      "website": "https://getfave.com",
+      "address": "725 Howard Street, Evanston 60202",
+      "categories": [ "Black", "PersonalAndHair" ]
     }
   ]
 }

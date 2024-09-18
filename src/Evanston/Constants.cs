@@ -15,4 +15,5 @@ public enum BusinessCategory
     HomeAndGarden = 10,
     Industrial = 11,
     MovingStorage = 12,
+    PersonalAndHair = 13,
 }
