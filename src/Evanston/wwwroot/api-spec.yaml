@@ -1,6 +1,6 @@
 asyncapi: '2.6.0'
 info:
-  title: Ace Mega School Municipal Directory
+  title: Evanston Organizations Directory
   version: '0.1.0'
   description: |
     A directory of local municipal resources.
@@ -49,6 +49,12 @@ channels:
             chiefExecutive:
               type: string
               description: The chief executive of the business
-            categories:
+            description:
+              type: string
+              description: The description of the business
+            targetClient:
+              type: string
+              description: A description of the organization's perfect, ideal client
+        categories:
               type: array
               enum: ['ArtsCultureEntertainment', 'BuildingAndConstruction', 'BusProServices', 'Education', 'Black', 'FinIns', 'Funeral', 'HealthMedical', 'HomeAndGarden', 'Industrial', 'MovingStorage', 'PersonalAndHair']

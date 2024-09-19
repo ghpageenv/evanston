@@ -47,10 +47,15 @@
                 <MudCardContent>
                     <MudHidden Breakpoint="@BreakPoint">
                         <MudStack Spacing="6">
+                            @if (business.TargetClient.TryPickT0(out var targetClient, out _))
+                            {
+                                <MudText><Centered>Ideal Client:</Centered><br/>@Print(targetClient)</MudText>
+                                <br/>
+                            }
                             @if (business.Description.TryPickT0(out var description, out _))
                             {
-                                <MudText><Centered>Description:</Centered><br/>@Print(description)</MudText>
-                                <br/>
+                                <MudText><Centered>Description:</Centered><br />@Print(description)</MudText>
+                                <br />
                             }
                             @if (business.ChiefExecutive.TryPickT0(out var executive, out _))
                             {
@@ -196,11 +201,12 @@
     private RowViewModel[] GetRows(Business business) =>
     [
         new("Executive:", business.ChiefExecutive.MapT0(value => value), business),
+        new("Ideal Client:", business.TargetClient, business),
         new("Description:", business.Description, business),
         new("Address:", Print(business.Address), business),
         new("Phone:", Print(business.Phone), business),
         new(WebsiteColumnName, Print(business.Website), business),
-        new(EmailColumnName, Print(business.Email), business)
+        new(EmailColumnName, Print(business.Email), business),
     ];
 
     private static OneOf<string, None> Print(OneOf<Address, None> address) => address.MapT0(a => a.Value);
