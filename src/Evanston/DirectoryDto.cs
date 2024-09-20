@@ -2,7 +2,7 @@
 
 namespace Evanston;
 
-public class Directory
+public class DirectoryDto
 {
     [JsonPropertyName("businesses")]
     public BusinessDto[] Businesses { get; set; } = [];

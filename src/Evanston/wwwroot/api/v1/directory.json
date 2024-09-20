@@ -18,7 +18,7 @@
       "description": "From original plays to the best of Broadway, Fleetwood-Jourdain Theater is committed to supplying the very best in theater.",
       "address": "1101 Davis St., Evanston 60201",
       "phone": "(847) 866-5915",
-      "website": "https://www.cityofevanston.org/about-evanston/arts-and-culture/theatre/fleetwood-jourdain-theatre",
+      "website": "https://fjtheatre.com",
       "categories": [ "Black", "ArtsCultureEntertainment" ]
     },
     {
@@ -29,18 +29,6 @@
       "website": "https://shorefrontlegacy.org/",
       "email": "shorefront@me.com",
       "categories": [ "Black", "ArtsCultureEntertainment", "FamComCiv" ]
-    },
-    {
-      "name": "A.G. Tuckpointing",
-      "chiefExecutive": "Antwan Green, owner",
-      "phone": "(773) 458-9527",
-      "categories": [ "Black", "BuildingAndConstruction" ]
-    },
-    {
-      "name": "B & B Handyman Services",
-      "chiefExecutive": "Willie Brown, owner",
-      "phone": "(773) 706-8861",
-      "categories": [ "Black", "BuildingAndConstruction" ]
     },
     {
       "name": "Chuck's Refrigeration",
@@ -64,12 +52,6 @@
       "name": "M & M Heating & Cooling, Inc.",
       "chiefExecutive": "Michael Marques, owner",
       "phone": "(773) 606-2416",
-      "categories": [ "Black", "BuildingAndConstruction" ]
-    },
-    {
-      "name": "McFadden Construction & Welding",
-      "chiefExecutive": "Jessie McFadden, owner",
-      "phone": "(847) 492-9537",
       "categories": [ "Black", "BuildingAndConstruction" ]
     },
     {
@@ -566,6 +548,26 @@
       "website": "https://getfave.com",
       "address": "725 Howard Street, Evanston 60202",
       "categories": [ "Black", "PersonalAndHair" ]
+    }
+  ],
+  "archive": [
+    {
+      "name": "A.G. Tuckpointing",
+      "chiefExecutive": "Antwan Green, owner",
+      "phone": "(773) 458-9527",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "B & B Handyman Services",
+      "chiefExecutive": "Willie Brown, owner",
+      "phone": "(773) 706-8861",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "McFadden Construction & Welding",
+      "chiefExecutive": "Jessie McFadden, owner",
+      "phone": "(847) 492-9537",
+      "categories": [ "Black", "BuildingAndConstruction" ]
     }
   ]
 }
