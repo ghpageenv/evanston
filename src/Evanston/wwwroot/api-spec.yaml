@@ -57,4 +57,4 @@ channels:
               description: A description of the organization's perfect, ideal client
             categories:
               type: array
-              enum: ['ArtsCultureEntertainment', 'BuildingAndConstruction', 'BusProServices', 'Education', 'Black', 'FinIns', 'Funeral', 'HealthMedical', 'HomeAndGarden', 'Industrial', 'MovingStorage', 'PersonalAndHair']
+              enum: ['ArtsCultureEntertainment', 'BuildingAndConstruction', 'BusProServices', 'Education', 'Black', 'FinIns', 'Funeral', 'HealthMedical', 'HomeAndGarden', 'Industrial', 'MovingStorage', 'PersonalAndHair', 'ShippingMailing']

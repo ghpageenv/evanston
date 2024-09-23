@@ -548,6 +548,15 @@
       "website": "https://getfave.com",
       "address": "725 Howard Street, Evanston 60202",
       "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "Caribbean Shipping & Postal Service",
+      "chiefExecutive": "Maurice McKenzie, owner",
+      "description": "Notary public.  Fed Ex & UPS.  Mail boxes and rentals.  Key duplication.  Shipping: boxes and barrels.  Authorized Bill Payment Center.",
+      "phone": "(847) 322-8409",
+      "website": "csps721@yahoo.com",
+      "address": "721 Howard St., Evanston 60202",
+      "categories": [ "Black", "ShippingMailing" ]
     }
   ],
   "archive": [

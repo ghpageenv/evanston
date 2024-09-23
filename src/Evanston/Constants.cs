@@ -16,4 +16,5 @@ public enum BusinessCategory
     Industrial = 11,
     MovingStorage = 12,
     PersonalAndHair = 13,
+    ShippingMailing = 14,
 }
