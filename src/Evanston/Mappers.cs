@@ -17,6 +17,7 @@ public partial class Mappers
             !string.IsNullOrWhiteSpace(dto.Email) ? Email.From(dto.Email) : new None(),
             dto.ChiefExecutive != null ? dto.ChiefExecutive : new None(),
             !string.IsNullOrWhiteSpace(dto.TargetClient) ? dto.TargetClient : new None(),
+            !string.IsNullOrWhiteSpace(dto.Anchor) ? dto.Anchor : new None(),
             dto.Categories);
     }
 }

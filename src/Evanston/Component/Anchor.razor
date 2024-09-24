@@ -1,0 +1,16 @@
+﻿@inherits ComponentBase
+
+@if (!string.IsNullOrWhiteSpace(Value))
+{
+    <div id="@Value">
+        @ChildContent
+    </div>
+}
+else
+{
+    @ChildContent
+}
+@code {
+    [Parameter]
+    public string? Value { get; set; }
+}

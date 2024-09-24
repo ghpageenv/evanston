@@ -28,6 +28,9 @@ public class BusinessDto
     [JsonPropertyName("targetClient")]
     public string? TargetClient { get; set; }
 
+    [JsonPropertyName("anchor")]
+    public string? Anchor { get; set; }
+
     [JsonPropertyName("categories")]
     public BusinessCategory[] Categories { get; set; } = [];
 }
