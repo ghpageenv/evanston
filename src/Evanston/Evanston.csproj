@@ -24,4 +24,10 @@
     <PackageReference Include="ValueOf" Version="2.0.31" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="Component\Anchor.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+  </ItemGroup>
+
 </Project>

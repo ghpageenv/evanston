@@ -17,6 +17,7 @@ public record Business(
     OneOf<Email, None> Email,
     OneOf<string, None> ChiefExecutive,
     OneOf<string, None> TargetClient,
+    OneOf<string, None> Anchor,
     BusinessCategory[] Categories)
 {
 }
