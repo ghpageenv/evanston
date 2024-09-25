@@ -17,4 +17,5 @@ public enum BusinessCategory
     MovingStorage = 12,
     PersonalAndHair = 13,
     ShippingMailing = 14,
+    RealEstate = 15,
 }

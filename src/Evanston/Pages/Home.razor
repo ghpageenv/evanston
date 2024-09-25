@@ -126,7 +126,7 @@
 <MudDialog @bind-Visible="_showAceDialog" Options="@(new DialogOptions() { NoHeader = true })">
     <DialogContent>
         <MudStack>
-            <MudText>@AceDescription</MudText>
+            <MudText>Ace is a local social club for teens (13-18).</MudText>
             <MudButton OnClick="@(() => _showAceDialog = false)" Class="ml-auto mr-n3 mb-1" Color="Color.Error">Got it!</MudButton>
         </MudStack> 
     </DialogContent>
@@ -189,7 +189,6 @@
     private const Breakpoint BreakPoint = Breakpoint.MdAndUp;
     private const string WebsiteColumnName = "Website:";
     private const string EmailColumnName = "Email:";
-    private const string AceDescription = "Ace is a school exclusively owned and controlled by local teens (13-18).";
 
     private record RowViewModel(string PropertyName, OneOf<string, None> PropertyValue, Business Model);
 
@@ -264,5 +263,6 @@
         (BusinessCategory.MovingStorage, "Moving & Storage"),
         (BusinessCategory.PersonalAndHair, "Personal Services & Hair Care"),
         (BusinessCategory.ShippingMailing, "Shipping & Mailing"),
+        (BusinessCategory.RealEstate, "Real Estate"),
     ];
 }

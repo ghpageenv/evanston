@@ -570,6 +570,31 @@
       "website": "csps721@yahoo.com",
       "address": "721 Howard St., Evanston 60202",
       "categories": [ "Black", "ShippingMailing" ]
+    },
+    {
+      "name": "Compass Real Estate",
+      "chiefExecutive": "Allie Payne, owner",
+      "phone": "(312) 752-0055",
+      "website": "allie.payne@compass.com",
+      "address": "814 Dempster, Evanston, IL 60202",
+      "categories": [ "Black", "RealEstate" ]
+    },
+    {
+      "name": "Manchester Realty",
+      "chiefExecutive": "Bob Parris, owner and managing broker",
+      "description": "Bob has over 17 years of residential real estate experience, specifically helping buyers and sellers in Evanston, Chicago, Skokie, and Wilmette.  Bob is ready to help you achieve all of your real estate goals.",
+      "phone": "(847) 869-1900",
+      "address": "3423 Church St. Evanston, IL 60203",
+      "categories": [ "Black", "RealEstate" ]
+    },
+    {
+      "name": "Coldwell Banker",
+      "chiefExecutive": "Vanessa Johnson-McCoy, agent",
+      "description": "If you're looking for a real estate broker who is honest, resourceful, detail-oriented and professional, look no further! Vanessa is THE ONE!",
+      "phone": "(847) 977-5789",
+      "email": "Vanessa.McCoy@CBRealty.com",
+      "website": "https://vanessajohnsonmccoy-chicago.sites.cbmoxi.com",
+      "categories": [ "Black", "RealEstate" ]
     }
   ],
   "archive": [
