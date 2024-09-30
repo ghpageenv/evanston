@@ -18,4 +18,5 @@ public enum BusinessCategory
     PersonalAndHair = 13,
     ShippingMailing = 14,
     RealEstate = 15,
+    Food = 16,
 }

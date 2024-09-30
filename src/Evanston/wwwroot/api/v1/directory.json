@@ -150,7 +150,7 @@
     },
     {
       "name": "Kelvin Company, LLC",
-      "chiefExecutive": "Paul Boynton, owner",
+      "chiefExecutive": "Paul & Kimberly Boynton, owners",
       "description": "Concrete Contractors Established in 2004. The company specializes in commercial and residential Demolition, excavation, foundation installation, repair of cracks for waterproofing, Damproofing of foundations, interior, exterior perimeter drain tile. We also remove, replace all concrete flatwork from basement slabs to all types of from patios, sidewalks, driveways, custom decorative concrete (stamping, exposed aggregate, etched concrete), and apoxy floors. We also provide services for exterior metal Handrails, Carpentry repairs and remodeling.",
       "phone": "(847) 404-1695",
       "email": "info@kelvincompany.com",
@@ -595,6 +595,82 @@
       "email": "Vanessa.McCoy@CBRealty.com",
       "website": "https://vanessajohnsonmccoy-chicago.sites.cbmoxi.com",
       "categories": [ "Black", "RealEstate" ]
+    },
+    {
+      "name": "Bella Noir Desserts",
+      "chiefExecutive": "Courtney Barrett, owner",
+      "description": "Bella Noir Desserts is a catering business that gets back to the basics of cooking by preparing delectable desserts and savory and food items from scratch.",
+      "phone": "(773) 681-1168",
+      "categories": [ "Black", "Food" ]
+    },
+    {
+      "name": "C&W Market and Ice Cream Parlor",
+      "chiefExecutive": "Clarence and Wendy Weaver, owners",
+      "description": "A neighborhood market and ice cream parlor providing an assortment of goods and fresh items, with the finest Homer's homemade ice cream, with an adjacent full-service restaurant/grill.",
+      "address": "1901 Church St. Evanston 60201",
+      "phone": "(847) 833-9367",
+      "email": "cwminimart831@gmail.com",
+      "categories": [ "Black", "Food" ]
+    },
+    {
+      "name": "Claire's Korner",
+      "chiefExecutive": "Claire, owner",
+      "description": "Claire's Korner is a Jamaican restaurant located on the corner of Emerson and Dodge. Jerk chicken and curry goat are some of the menu items recommended by customers.",
+      "phone": "(847) 328-7650",
+      "address": "1827 Emerson St. Evanston 60201",
+      "categories": [ "Black", "Food" ]
+    },
+    {
+      "name": "Harold's Chicken Shack",
+      "description": "All dinners include fries, bread and coleslaw.  Free Senior deals and other discounts.",
+      "phone": "(847) 733-0711",
+      "address": "337 Howard St. Evanston 60202",
+      "website": "https://haroldschickenevanston.com",
+      "categories": [ "Black", "Food" ]
+    },
+    {
+      "name": "Hecky's Barbecue",
+      "chiefExecutive": "Hecky Powell, owner",
+      "description": "For 30 + years, Hecky's Barbecue has been serving up some of the best barbecue in the nation.  Hecky's is a long-standing popular spot for barbecue fare..  It's the sauce.",
+      "phone": "(847) 492-1182",
+      "email": "Hecky@heckys.com",
+      "address": "1902 Green Bay Rd., Evanston 60201",
+      "website": "https://heckys.com",
+      "categories": [ "Black", "Food" ]
+    },
+    {
+      "name": "Jamaica Jerk",
+      "chiefExecutive": "Chef Waite, owner",
+      "description": "Jamaica Jerk serves delicious Jamaican and Caribbean cuisine in a tropical atmosphere.  Food is made from scratch by Chef Waite who brings a culinary degree from the Cooking and Hospitality Institute of Chicago.",
+      "phone": "(847) 933-3304",
+      "address": "3357 Dempster St., Skokie 60076",
+      "categories": [ "Black", "Food" ]
+    },
+    {
+      "name": "Kingston Grill (KG)",
+      "chiefExecutive": "Patrick Reid, owner",
+      "description": "The succulent jerk chicken here comes in a sandwich, as wings, in a salad, or as an entree in a quarter; half, or whole-bird portion.   KG also serves other traditional dishes.",
+      "phone": "(847) 475-7700",
+      "email": "kingstongrillja@gmail.com",
+      "address": "1164 Dodge Ave., Evanston 60202",
+      "categories": [ "Black", "Food" ]
+    },
+    {
+      "name": "Windy City Flavors",
+      "description": "Offering burgers, chicken wings, hot dogs.",
+      "phone": "(312) 709-7713",
+      "address": "1806 Dempster St, Evanston, IL 60202",
+      "categories": [ "Black", "Food" ]
+    },
+    {
+      "name": "YoFresh Yogurt Cafe (YoFresh)",
+      "chiefExecutive": "Larry and Jean Murphy, owners",
+      "description": "YoFresh is a frozen yogurt cafe and full-serve coffee shop with 10 rotating froyo flavors, and a variety of menu items including soup, sandwiches, hot dogs, quiche, chili, and pastries.  Order in or out with Grubhub or Uber Eats. Free Wi-Fi.",
+      "phone": "(847) 859-6408",
+      "email": "yofreshevanston@gmail.com",
+      "address": "635 Chicago Ave. Evanston 60202",
+      "website": "https://yofreshcafe.com",
+      "categories": [ "Black", "Food" ]
     }
   ],
   "archive": [
