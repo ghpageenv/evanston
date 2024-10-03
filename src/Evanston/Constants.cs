@@ -19,4 +19,5 @@ public enum BusinessCategory
     ShippingMailing = 14,
     RealEstate = 15,
     Food = 16,
+    Retail = 17,
 }
