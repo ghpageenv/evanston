@@ -256,6 +256,7 @@
     {
       "name": "Research Explorers, Inc.",
       "chiefExecutive": "Lisa McDonald, owner",
+      "targetClient": "Research firms, advertising agencies and non-profit organizations on issues ranging from consumer behavior/preferences, voter preferences or health care usage and trends.",
       "description": "Specializes in planning, executing and analyzing qualitative research (focus groups, in-depth interviews,etc.) to improve your understanding and provide actionable insights to brand, opinion or service issues.",
       "phone": "(847) 853-0237",
       "email": "Lisa@researchexplorers.com",
@@ -671,6 +672,48 @@
       "address": "635 Chicago Ave. Evanston 60202",
       "website": "https://yofreshcafe.com",
       "categories": [ "Black", "Food" ]
+    },
+    {
+      "name": "Classy Closet Consignment",
+      "chiefExecutive": "C. Wilder, owner",
+      "description": "A trendy consignment and retail shop with affordable designer clothing and more.",
+      "phone": "(847) 475- 0355",
+      "email": "wildercc@hotmail.com",
+      "address": "701 Washington St., Evanston 60202",
+      "categories": [ "Black", "Retail" ]
+    },
+    {
+      "name": "Ella’s Essence Flowers and Gifts",
+      "chiefExecutive": "Ella Brantley, CEO",
+      "phone": "(224) 443-7200",
+      "email": "https://ellaessence.com",
+      "categories": [ "Black", "Retail" ]
+    },
+    {
+      "name": "Maison Du Prince LLC",
+      "description": "Your premier destination for painstakingly curated collections of home accents and personal accessories sourced from around the globe. Custom bespoke floral arrangements and impeccable special event designs are available for all occasions.",
+      "phone": "(847) 386-9020",
+      "email": "rjpdesigns99@gmail.com",
+      "address": "1239 Chicago Avenue Evanston, Illinois 60202",
+      "categories": [ "Black", "Retail" ]
+    },
+    {
+      "name": "Minouchic Boutique Resale",
+      "chiefExecutive": "Mary and Maria Toussaint, owners",
+      "description": "Established in 2013. An upscale boutique that sells new and resale clothing. Minouchic  sells Haitian attire, vintage jewelry and more.",
+      "phone": "(847) 859-2066",
+      "email": "minouchicboutitque@yahoo.com",
+      "address": "1706 Dodge Ave, Evanston, Il 60201, Evanston 60201",
+      "categories": [ "Black", "Retail" ]
+    },
+    {
+      "name": "Stepping Out on Faith Consignment",
+      "chiefExecutive": "Vivian Killebrew, owner",
+      "description": "The  store offers secondhand clothing, shoes & accessories for men and women.",
+      "phone": "(847) 733-0980",
+      "email": "Viviank570@yahoo.com",
+      "address": "1632 Orrington Ave., Evanston 60201",
+      "categories": [ "Black", "Retail" ]
     }
   ],
   "archive": [
