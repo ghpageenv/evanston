@@ -1,0 +1,739 @@
+{
+  "businesses": [
+    {
+      "name": "Robert Reece Insurance & Financial Services",
+      "chiefExecutive": "Robert Reece, owner",
+      "description": "Robert Reece Insurance & Financial Services (RRIFS) is a full-service insurance and financial services agency.  RRIFS determines financial and insurance solutions.",
+      "phone": "(847) 440-5813",
+      "address": "1603 Orrington Ave. Evanston 60201",
+      "categories": [ "Black", "FinIns" ]
+    },
+    {
+      "name": "Terry Performance Group",
+      "chiefExecutive": "Keith Terry, owner",
+      "description": "The Group is designed to provide targeted advisory healthcare and management consulting services to small-and medium-sized organizations and trade associations.",
+      "phone": "(847) 867-1192",
+      "website": "https://terryperformancegroup.com",
+      "address": "1603 Orrington Ave, #600 Evanston 60201",
+      "categories": [ "Black", "FinIns" ]
+    },
+    {
+      "name": "Wealth Syndicate",
+      "chiefExecutive": "Jerome Bell, Lead Instructor",
+      "targetClient": "Someone who wants to learn the secrets of the wealthy, but broken down for a 10 year old, and at an affordable price.",
+      "description": "Learn the S.I.M.P.L.E strategy for building wealth.  Ideal for business owners, real estate professionals, tax and insurance professionals, and church/non-profit leaders.  We also have a Youth Program (ages 10+)!",
+      "phone": "224-310-9357",
+      "email": "hello@megaschool1.me",
+      "website": "https://megaschool1.github.io/",
+      "anchor": "wealthsyndicate",
+      "categories": [ "Black", "FinIns" ]
+    },
+    {
+      "name": "Jim Lee-State Farm Insurance",
+      "chiefExecutive": "Jim Lee, owner",
+      "description": "Since 1978, Jim Lee has been working with individuals, businesses and the community offering various types of insurance such as Auto, Home-owners, Renters, Life, and Financial.",
+      "phone": "(847) 328-4630",
+      "email": "Jim@JimLeeinsurance.com",
+      "website": "https://www.jimleeinsurance.com",
+      "address": "721 Dodge Ave. Evanston 60202",
+      "categories": [ "Black", "FinIns" ]
+    },
+    {
+      "name": "Legal Shield",
+      "chiefExecutive": "Rhonda Craven, Independent Associate",
+      "phone": "(773) 606-6532",
+      "categories": [ "Black", "FinIns" ]
+    },
+    {
+      "name": "African American History and Genealogical Study Group of Evanston",
+      "description": "Began in 2005.  Meets twice monthly, every other Tuesday evening, at the Levy center discussing African-American history and genealogy.",
+      "address": "300 Dodge Ave., Levy Center  Evanston 60202",
+      "categories": [ "Black", "ArtsCultureEntertainment" ]
+    },
+    {
+      "name": "Blaze the Floor Dance Studio",
+      "description": "The studio provides dance instruction to children and adults.  Several types of dance instruction are offered:  Ballroom, Latin, Latin American, Special Event Choreography",
+      "address": "300 Dodge Ave., Levy Center, Evanston 60202",
+      "phone": "(847) 868-0072",
+      "categories": [ "Black", "ArtsCultureEntertainment" ]
+    },
+    {
+      "name": "Fleetwood-Jourdain Theater",
+      "description": "From original plays to the best of Broadway, Fleetwood-Jourdain Theater is committed to supplying the very best in theater.",
+      "address": "1101 Davis St., Evanston 60201",
+      "phone": "(847) 866-5915",
+      "website": "https://fjtheatre.com",
+      "categories": [ "Black", "ArtsCultureEntertainment" ]
+    },
+    {
+      "name": "Shorefront Legacy Center",
+      "description": "Shorefront collects preserves and educates people about Black history on Chicago's Northshore.",
+      "address": "2214 Ridge Ave. Evanston 60201",
+      "phone": "(847) 864-7467",
+      "website": "https://shorefrontlegacy.org/",
+      "email": "shorefront@me.com",
+      "categories": [ "Black", "ArtsCultureEntertainment", "FamComCiv" ]
+    },
+    {
+      "name": "Chuck's Refrigeration",
+      "chiefExecutive": "Charles Perrin",
+      "phone": "(847) 561-9413",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "Evanston Community Development Corp.",
+      "chiefExecutive": "Cherylette Hilton",
+      "phone": "(847) 269-7073",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "JL Construction",
+      "chiefExecutive": "Lee Jonas, owner",
+      "phone": "(847) 858-1680",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "M & M Heating & Cooling, Inc.",
+      "chiefExecutive": "Michael Westby, owner",
+      "website": "https://mandmheatingandcooling.com",
+      "email": "mandmheatandcool@gmail.com",
+      "phone": "(773) 606-2416",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "R & L Electric",
+      "chiefExecutive": "Roy Lawners, owner",
+      "phone": "(847) 644-4677",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "C & B Construction",
+      "chiefExecutive": "Clifford Washington, owner",
+      "phone": "(847) 331-7965",
+      "email": "Cliffordwashington66@yahoo.com",
+      "address": "1142 Florence Ave., Evanston 60202",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "Cath Associates, Inc.",
+      "chiefExecutive": "Frantz Cartright, owner",
+      "phone": "(847) 332-2600",
+      "email": "fcartright@cathinc.com",
+      "description": "Construction, Facility, Management, Project",
+      "address": "2401 Main St. Evanston 60202",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "Community Builders of Evanston",
+      "chiefExecutive": "William Smith, owner",
+      "description": "General contractor",
+      "phone": "(847) 529-1628",
+      "email": "wbysmith@gmail.com",
+      "address": "1233 Hartrey Ave. Evanston 60202",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "Diggs & Diggs Painting",
+      "chiefExecutive": "MacArthur Diggs, owner",
+      "phone": "(847) 864-2916",
+      "address": "1925 Darrow  Ave. Evanston 60201",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "Don Woods Decorating, Inc.",
+      "chiefExecutive": "Don Woods, owner",
+      "description": "General contractor.  Specializes in carpentry, drywall, interior design, interior and exterior painting; plastering & clean-out",
+      "phone": "(847) 337-7528",
+      "email": "jasonfransom@yahoo.com",
+      "address": "9200 East Prairie Rd. Evanston 60203",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "Kelvin Company, LLC",
+      "chiefExecutive": "Paul & Kimberly Boynton, owners",
+      "description": "Concrete Contractors Established in 2004. The company specializes in commercial and residential Demolition, excavation, foundation installation, repair of cracks for waterproofing, Damproofing of foundations, interior, exterior perimeter drain tile. We also remove, replace all concrete flatwork from basement slabs to all types of from patios, sidewalks, driveways, custom decorative concrete (stamping, exposed aggregate, etched concrete), and apoxy floors. We also provide services for exterior metal Handrails, Carpentry repairs and remodeling.",
+      "phone": "(847) 404-1695",
+      "email": "info@kelvincompany.com",
+      "website": "https://www.kelvincompany.com/",
+      "address": "2150 Ashland Ave. Evanston 60201",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "PDQ Construction, Inc.",
+      "chiefExecutive": "Calvin Lynn, owner",
+      "description": "Established in 2005.  Contractor. Services include: remodeling, carpentry, electrical, painting, plumbing, siding, windows, doors.",
+      "phone": "(847) 791-7183",
+      "email": "pdq_cal@sbcglobal.net",
+      "address": "424 South Blvd. Evanston 60202",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "Priority Management Services, LLC",
+      "chiefExecutive": "Pete Eason, owner",
+      "description": "General contractor",
+      "phone": "(847) 343-0203",
+      "email": "easonconstruction1@gmail.com",
+      "address": "1821 Leland Ave. Evanston, IL 60201",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "True Power Electric",
+      "chiefExecutive": "Dion Jones, owner",
+      "description": "Electrician.  True Power Electric strives to meet the customer's needs.  Their reputation is based on safety, service, and quality regardless of how large or small the job.",
+      "phone": "(847) 477-3230",
+      "email": "truepowere@hotmail.com",
+      "address": "9020 Ewing Ave. Evanston 60203",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "Turf Care Landscaping, Inc.",
+      "description": "Landscape contractors.  Certified DBE",
+      "phone": "(847) 475-1677",
+      "email": "connie@turfcareinc.com",
+      "address": "1801 Darrow Ave. Evanston 60202",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "American Defensive Driving School",
+      "chiefExecutive": "Doug Whitmore, owner",
+      "description": "Whether an experienced driver or looking to become a new member of the driving community, a program can be designed for each individual.",
+      "phone": "(847) 425-1640",
+      "email": "doug@beasafedriver.com",
+      "website": "https://www.beasafedriver.com",
+      "address": "1640 Orrington Ave. Evanston 60201",
+      "categories": [ "Black", "BusProServices" ]
+    },
+    {
+      "name": "N. B. Allen & Associates, Ltd.",
+      "chiefExecutive": "Neville Allen, owner",
+      "description": "N.B. Allen & Associates, Ltd. was established as an Illinois accounting firm to provide accounting, tax, financial and business advisory services to corporations, small businesses and individuals.  Allen has more than 22 years of diverse experiences.",
+      "phone": "(847) 675-0055",
+      "email": "info@nballen.com",
+      "website": "https://www.nballen.com",
+      "address": "4350 Oakton St., #203 Skokie 60076",
+      "categories": [ "Black", "BusProServices" ]
+    },
+    {
+      "name": "Desmond A. Taylor & Associates, CPA, Ltd.",
+      "description": "Desmond manages all operations including, but not limited to business development, alliances, human resources, billing, client projects and more.",
+      "phone": "847-859-6328",
+      "email": "ctaylor@dta-cpa.com",
+      "website": "https://www.dta-cpa.com",
+      "address": "P. O. Box 5790 Evanston 60204",
+      "categories": [ "Black", "BusProServices" ]
+    },
+    {
+      "name": "InSync Data Systems",
+      "chiefExecutive": "Paul Mark Wallace, Chef Integrator",
+      "description": "InSync is a privately held company, and is a single location business. Computer software systems analysis and design, custom' computer programming.",
+      "phone": "(847) 328-9905",
+      "address": "1560 Dewey Ave. #341 Evanston 60202",
+      "categories": [ "Black", "BusProServices" ]
+    },
+    {
+      "name": "Leonore E. Carlson, Attorney",
+      "description": "Criminal Attorney",
+      "phone": "(314) 412-8701",
+      "email": "Leonore.E.Carlson@gmail.com",
+      "address": "2000 Valley Lo Ln. Glenview 60025",
+      "categories": [ "Black", "BusProServices" ]
+    },
+    {
+      "name": "Path Press, Inc.",
+      "chiefExecutive": "Bennett J. Johnson, President",
+      "description": "Provides for people of African descent and the Third World to write and publish their stories and ideas.",
+      "phone": "(847) 492-0177",
+      "email": "pathpressinc@aol.com",
+      "address": "708 Washington St. Evanston 60202",
+      "categories": [ "Black", "BusProServices" ]
+    },
+    {
+      "name": "Parker and Sons Carpet Cleaning Services",
+      "phone": "(888) 947-2753",
+      "address": "1531 Cleveland Street, Evanston 60202",
+      "categories": [ "Black", "BusProServices" ]
+    },
+    {
+      "name": "Research Explorers, Inc.",
+      "chiefExecutive": "Lisa McDonald, owner",
+      "targetClient": "Research firms, advertising agencies and non-profit organizations on issues ranging from consumer behavior/preferences, voter preferences or health care usage and trends.",
+      "description": "Specializes in planning, executing and analyzing qualitative research (focus groups, in-depth interviews,etc.) to improve your understanding and provide actionable insights to brand, opinion or service issues.",
+      "phone": "(847) 853-0237",
+      "email": "Lisa@researchexplorers.com",
+      "website": "https://researchexplorers.com",
+      "address": "111 New Trier Ct. Wilmette 60091",
+      "categories": [ "Black", "BusProServices" ]
+    },
+    {
+      "name": "Rich Foreman Photography",
+      "chiefExecutive": "Rich Foreman, Owner",
+      "description": "An expert event, commercial, portrait photographer with natural people skills, and 20 years of experience.  His studio is available for rental.",
+      "phone": "(847) 864-4549",
+      "address": "939 Sherman Ave. Evanston 60202",
+      "categories": [ "Black", "BusProServices" ]
+    },
+    {
+      "name": "Horton Janitorial Service",
+      "chiefExecutive": "Todd M. Horton",
+      "description": "Windows and custodial services for home and business",
+      "phone": "(847) 596-1360",
+      "address": "1331 Cleveland, Evanston 60202",
+      "categories": [ "Black", "BusProServices" ]
+    },
+    {
+      "name": "Budget/Avis Car Rental",
+      "phone": "(847) 864-6661",
+      "address": "801 Chicago Avenue, Evanston 60202",
+      "categories": [ "Black", "BusProServices" ]
+    },
+    {
+      "name": "Mega School",
+      "chiefExecutive": "Jerome Bell, CEO & Founder",
+      "targetClient": "Someone who's been itching to learn something obscure, mainstream, or anything in between.",
+      "description": "“High school” for adults!  Learn both popular and obscure topics.  Our premier courses are 'Bitcoin for Dummies (and other cryptos)' and 'Trust Fund&nbsp;<i>My</i>&nbsp; Baby!'.",
+      "phone": "224-310-9357",
+      "email": "hello@megaschool1.me",
+      "website": "https://megaschool1.github.io/",
+      "categories": [ "Black", "Education" ]
+    },
+    {
+      "name": "BrownBabyReads - Online",
+      "chiefExecutive": "Dawn Eddy, President",
+      "description": "Online bookstore features children's books with African-American and multiracial characters.  It is a non-profit organization with a mission to celebrate, encourage, and promote literacy.",
+      "phone": "(734) 612-5821",
+      "categories": [ "Black", "Education" ]
+    },
+    {
+      "name": "Huntington Learning Center",
+      "chiefExecutive": "Cheryl Reid, owner",
+      "description": "Established in 2003, Huntington Learning Center has been providing students of the North Shore with exceptional tutoring and test prep for over a decade.",
+      "phone": "(847) 675-8600",
+      "website": "https://huntingtonhelps.com",
+      "address": "9418 Skokie Blvd. Skokie 60077",
+      "categories": [ "Black", "Education" ]
+    },
+    {
+      "name": "The Honey Bee Company, LLC",
+      "chiefExecutive": "Rachel O. Williams, owner",
+      "description": "Award winning materials, lessons and training to help K-2nd Grade teachers infuse STEM into early elementary classrooms. Books, games & resources introduce young minds to science and technology.",
+      "phone": "(224) 402-3963",
+      "email": "kelley@paigeandpaxton.com",
+      "website": "https://www.paigeandpaxton.com",
+      "address": "2906 Central St. #258 Evanston 60201",
+      "categories": [ "Black", "Education" ]
+    },
+    {
+      "name": "SHE IS CODE",
+      "chiefExecutive": "Tonya Patterson, Executive Director",
+      "description": "She Is Code creates opportunities for young women and minorities to learn about technology in ways that are engaging and fun.  A 501(c)(3) organization.",
+      "email": "sheiscode@gmail.com",
+      "address": "1655 Foster  Evanston  60201",
+      "categories": [ "Black", "Education" ]
+    },
+    {
+      "name": "Evanston Branch NAACP",
+      "chiefExecutive": "Rev. Michael C. R. Nabors, President",
+      "description": "The Branch meets on the 3rd Tuesday of each month, 7:30 pm.",
+      "phone": "(847) 864-0038",
+      "email": "naacpev@aol.com",
+      "address": "2010 Dewey Ave. #302A Evanston 60201",
+      "categories": [ "Black", "FamComCiv" ]
+    },
+    {
+      "name": "Krissie Harris, 2nd Ward Alderperson",
+      "categories": [ "Black", "FamComCiv" ]
+    },
+    {
+      "name": "Bobby Burns, 5th Ward Alderperson",
+      "categories": [ "Black", "FamComCiv" ]
+    },
+    {
+      "name": "Haliburton Funeral Chapel",
+      "chiefExecutive": "Nathan Haliburton, owner",
+      "description": "Providing courteous care for our local residents throughout your most trying times.",
+      "phone": "(847) 864-6135",
+      "address": "1317 Emerson St. Evanston 60201",
+      "categories": [ "Black", "Funeral" ]
+    },
+    {
+      "name": "Thompson Funeral/Cremation Services, Inc.",
+      "phone": "(847) 869-3172",
+      "email": "Thompsonfuneral1917@yahoo.com",
+      "address": "1917 Asbury Ave. Evanston 60201",
+      "categories": [ "Black", "Funeral" ]
+    },
+    {
+      "name": "Ashley Lauren Hair Institute",
+      "chiefExecutive": "Larry and Georgia Parker, owners",
+      "description": "Ashley Lauren Hair Institute takes pride in manufacturing the finest quality natural hair and skin care products available using the purest botanicals, 100% pure essential oils and herbal extracts that nature has to offer.",
+      "phone": "(847) 733-9470",
+      "email": "alproducts@netzero.net",
+      "website": "https://ashleylaurennaturalproducts.com",
+      "address": "636 Church St. Evanston 60201",
+      "categories": [ "Black", "HealthMedical" ]
+    },
+    {
+      "name": "Dental Art SPECIALISTS",
+      "chiefExecutive": "Drs. Jazmine & Melvin Dillard, III, owners",
+      "description": "Dental Art Specialists is an orthodontic and pediatric dental practice that opened in Evanston August 2015. The Drs. provide a warm, comfortable and fun dental practice.",
+      "phone": "(847) 563-4484",
+      "address": "1964 W. Dempster St. Evanston 60202",
+      "categories": [ "Black", "HealthMedical" ]
+    },
+    {
+      "name": "Skillz Physical Therapy - Evanston",
+      "phone": "(847) 859-6240",
+      "website": "https://skillzpt.com",
+      "address": "839 Dodge Ave, Evanston, IL 60202 ",
+      "categories": [ "Black", "HealthMedical" ]
+    },
+    {
+      "name": "Visiting Angels Living Assistance Services",
+      "chiefExecutive": "Kelly Gilbert, owner/director",
+      "phone": "(847) 424-9300",
+      "email": "visitingangelsofevanston@gmail.com",
+      "address": "518  Davis St, Ste. 208 Evanston, 60201",
+      "categories": [ "Black", "HealthMedical" ]
+    },
+    {
+      "name": "Good News Laundromat",
+      "chiefExecutive": "Jeffrey Kelly, owner",
+      "description": "At Good News Laundry you will find a wholesome atmosphere, quiet enough to study or use the free WI-Fi service.",
+      "phone": "(847) 869-8894",
+      "address": "817 Noyes St. Evanston 60201",
+      "categories": [ "Black", "HomeAndGarden" ]
+    },
+    {
+      "name": "JFI Packaging Group, Inc.",
+      "chiefExecutive": "Jerry W. Lacy, President & CEO",
+      "description": "JFI Packaging Group is a full-service packaging company.  We design, manufacture and convert folding cartons, point-of-purchase displays, instructional inserts and leaflets.",
+      "phone": "(312) 733-5242",
+      "website": "https://jfipackaging.com/index.html",
+      "email": "jerrylacy@jfipackaging.com",
+      "address": "5250 Old Orchard Rd. #300 Skokie 60077",
+      "categories": [ "Black", "Industrial" ]
+    },
+    {
+      "name": "Jackson Movers",
+      "chiefExecutive": "Tony Jackson, owner",
+      "description": "Hauling and delivery service.",
+      "phone": "(224) 223-5457",
+      "email": "Livingvoice21@gmail.com",
+      "address": "P.O. Box 627 Skokie 60076",
+      "categories": [ "Black", "MovingStorage" ]
+    },
+    {
+      "name": "Joey's Movers and Trucking, Inc.",
+      "description": "Joey's Movers provides moving for residential & commercial moves as well as trucking services.",
+      "phone": "(847) 674-7779",
+      "website": "https://joeysmovers.com",
+      "address": "7333 Ridgeway Ave. Skokie 60076",
+      "categories": [ "Black", "MovingStorage" ]
+    },
+    {
+      "name": "BAH's Hair Braiding",
+      "chiefExecutive": "Bah Fatoumata, owner",
+      "phone": "(847) 869-7549",
+      "address": "309 W. Howard St. Evanston 60202",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "Church Street Barber Shop",
+      "chiefExecutive": "Sam Johnson, owner",
+      "description": "Church Street Barber Shop is a long-standing Barber Shop located on the west side of Evanston.  African-American men, women and boys have patronized this shop for haircuts over the many years of its existence.  It is a community mainstay.",
+      "phone": "(847) 328-9749",
+      "address": "1905 Church Street Evanston 60201",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "Cutting Edge Hair Gallery",
+      "chiefExecutive": "Donna Walker, owner",
+      "description": "A uni-sex hair salon serving men, women and children. Specializes in cuts, coloring, ethnic hair braiding, eyebrows and lashes, chemical service.",
+      "phone": "(847) 424-1624",
+      "email": "walkerboyd@gmail.com",
+      "address": "3419 Church St, Evanston, IL 60203",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "Dempster Cuts",
+      "phone": "(847) 864-1924",
+      "address": "1805 Dempster St, Evanston, IL 60201",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "Ebony Barber Shop",
+      "description": "Ebony Barber Shop is a long-standing business, providing haircuts & hot shave services.",
+      "phone": "(847) 475-9701",
+      "address": "1702 Dodge Ave. Evanston 60201",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "Divine African Hair Brading",
+      "chiefExecutive": "Marcel Tagro, owner",
+      "email": "tagrowinner@gmail.com",
+      "address": "703 Howard St. Evanston 60202",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "EnvyMe Too Salon",
+      "description": "Hair styling and care, including barber shop.",
+      "phone": "(773) 540-1772",
+      "website": "https://envymehairstudio.com",
+      "email": "hello@envymehairstudio.com",
+      "address": "1914 Main St., Evanston",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "Executive Studio Hair Salon",
+      "description": "A comfortable upscale hair salon for women, men, boys and girls.  The salon has a barber and hair stylists.  Services of a massage therapist are available as well.",
+      "phone": "(847) 570-5822",
+      "email": "Hair_Diva@ameritech.net",
+      "address": "801 Main St. Evanston 60202",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "Hair by Paula Beauty Salon",
+      "phone": "(847) 475-2286",
+      "address": "1829 Emerson St. Evanston 60201",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "HV Salon and Spa",
+      "chiefExecutive": "Delia Vernon and Megon Hopwood, owners",
+      "phone": "(224) 226-2592",
+      "email": "hvee100@gmail.com",
+      "address": "707 A Howard Street, Evanston 60202",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "Ikandi Hair Studio",
+      "description": "Stylists support, enhance, and create beauty, with a focus on healthy hair whether relaxed or natural.",
+      "phone": "(847) 475-2634",
+      "website": "https://www.ikandihairstudio.com",
+      "address": "1705 Central St., Evanston 60201",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "Michele Lamothe Salon",
+      "chiefExecutive": "Michele Lamothe, owner",
+      "phone": "(773) 387-1641",
+      "email": "Michele_lamothe@yahoo.com",
+      "address": "609 Howard Street, Evanston 60202",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "The Lavish Hair Lounge",
+      "chiefExecutive": "Alexandra Nivose & Tanesha Staffney, owner",
+      "email": "(224) 307- 2872",
+      "address": "814 Dempster St., Evanston 60202",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "On Point Hair Salon",
+      "chiefExecutive": "Tenille Flowers, owner",
+      "description": "Quick weaves, sew-ins, braids",
+      "phone": "(847) 424-1266",
+      "website": "https://www.styleseat.com",
+      "address": "329 Howard St., Evanston 60202",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "Studio-SLK",
+      "chiefExecutive": "Sandy Lewis-Kadiri, owner",
+      "description": "Full service salon offering relaxation services from head to toe including manicure and pedicures, and hair care services as well.  Online Reservation system.",
+      "phone": "(847) 868-8353",
+      "website": "http://studio-slk.com",
+      "email": "contact@studio-slk.com",
+      "address": "1934 Maple Ave., Evanston 60201",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "Studio 876 LLC",
+      "chiefExecutive": "Camile Patton, owner",
+      "phone": "(224) 634-0729",
+      "address": "815 Main Street, Evanston",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "Style Rite Beauty Barber Salon",
+      "chiefExecutive": "Styling by Verona",
+      "description": "We do braids of all kind.",
+      "phone": "(847) 475-8100",
+      "website": "https://getfave.com",
+      "address": "725 Howard Street, Evanston 60202",
+      "categories": [ "Black", "PersonalAndHair" ]
+    },
+    {
+      "name": "Caribbean Shipping & Postal Service",
+      "chiefExecutive": "Maurice McKenzie, owner",
+      "description": "Notary public.  Fed Ex & UPS.  Mail boxes and rentals.  Key duplication.  Shipping: boxes and barrels.  Authorized Bill Payment Center.",
+      "phone": "(847) 322-8409",
+      "website": "csps721@yahoo.com",
+      "address": "721 Howard St., Evanston 60202",
+      "categories": [ "Black", "ShippingMailing" ]
+    },
+    {
+      "name": "Compass Real Estate",
+      "chiefExecutive": "Allie Payne, owner",
+      "phone": "(312) 752-0055",
+      "website": "allie.payne@compass.com",
+      "address": "814 Dempster, Evanston, IL 60202",
+      "categories": [ "Black", "RealEstate" ]
+    },
+    {
+      "name": "Manchester Realty",
+      "chiefExecutive": "Bob Parris, owner and managing broker",
+      "description": "Bob has over 17 years of residential real estate experience, specifically helping buyers and sellers in Evanston, Chicago, Skokie, and Wilmette.  Bob is ready to help you achieve all of your real estate goals.",
+      "phone": "(847) 869-1900",
+      "address": "3423 Church St. Evanston, IL 60203",
+      "categories": [ "Black", "RealEstate" ]
+    },
+    {
+      "name": "Coldwell Banker",
+      "chiefExecutive": "Vanessa Johnson-McCoy, agent",
+      "description": "If you're looking for a real estate broker who is honest, resourceful, detail-oriented and professional, look no further! Vanessa is THE ONE!",
+      "phone": "(847) 977-5789",
+      "email": "Vanessa.McCoy@CBRealty.com",
+      "website": "https://vanessajohnsonmccoy-chicago.sites.cbmoxi.com",
+      "categories": [ "Black", "RealEstate" ]
+    },
+    {
+      "name": "Bella Noir Desserts",
+      "chiefExecutive": "Courtney Barrett, owner",
+      "description": "Bella Noir Desserts is a catering business that gets back to the basics of cooking by preparing delectable desserts and savory and food items from scratch.",
+      "phone": "(773) 681-1168",
+      "categories": [ "Black", "Food" ]
+    },
+    {
+      "name": "C&W Market and Ice Cream Parlor",
+      "chiefExecutive": "Clarence and Wendy Weaver, owners",
+      "description": "A neighborhood market and ice cream parlor providing an assortment of goods and fresh items, with the finest Homer's homemade ice cream, with an adjacent full-service restaurant/grill.",
+      "address": "1901 Church St. Evanston 60201",
+      "phone": "(847) 833-9367",
+      "email": "cwminimart831@gmail.com",
+      "categories": [ "Black", "Food" ]
+    },
+    {
+      "name": "Claire's Korner",
+      "chiefExecutive": "Claire, owner",
+      "description": "Claire's Korner is a Jamaican restaurant located on the corner of Emerson and Dodge. Jerk chicken and curry goat are some of the menu items recommended by customers.",
+      "phone": "(847) 328-7650",
+      "address": "1827 Emerson St. Evanston 60201",
+      "categories": [ "Black", "Food" ]
+    },
+    {
+      "name": "Harold's Chicken Shack",
+      "description": "All dinners include fries, bread and coleslaw.  Free Senior deals and other discounts.",
+      "phone": "(847) 733-0711",
+      "address": "337 Howard St. Evanston 60202",
+      "website": "https://haroldschickenevanston.com",
+      "categories": [ "Black", "Food" ]
+    },
+    {
+      "name": "Hecky's Barbecue",
+      "chiefExecutive": "Hecky Powell, owner",
+      "description": "For 30 + years, Hecky's Barbecue has been serving up some of the best barbecue in the nation.  Hecky's is a long-standing popular spot for barbecue fare..  It's the sauce.",
+      "phone": "(847) 492-1182",
+      "email": "Hecky@heckys.com",
+      "address": "1902 Green Bay Rd., Evanston 60201",
+      "website": "https://heckys.com",
+      "categories": [ "Black", "Food" ]
+    },
+    {
+      "name": "Jamaica Jerk",
+      "chiefExecutive": "Chef Waite, owner",
+      "description": "Jamaica Jerk serves delicious Jamaican and Caribbean cuisine in a tropical atmosphere.  Food is made from scratch by Chef Waite who brings a culinary degree from the Cooking and Hospitality Institute of Chicago.",
+      "phone": "(847) 933-3304",
+      "address": "3357 Dempster St., Skokie 60076",
+      "categories": [ "Black", "Food" ]
+    },
+    {
+      "name": "Kingston Grill (KG)",
+      "chiefExecutive": "Patrick Reid, owner",
+      "description": "The succulent jerk chicken here comes in a sandwich, as wings, in a salad, or as an entree in a quarter; half, or whole-bird portion.   KG also serves other traditional dishes.",
+      "phone": "(847) 475-7700",
+      "email": "kingstongrillja@gmail.com",
+      "address": "1164 Dodge Ave., Evanston 60202",
+      "categories": [ "Black", "Food" ]
+    },
+    {
+      "name": "Windy City Flavors",
+      "description": "Offering burgers, chicken wings, hot dogs.",
+      "phone": "(312) 709-7713",
+      "address": "1806 Dempster St, Evanston, IL 60202",
+      "categories": [ "Black", "Food" ]
+    },
+    {
+      "name": "YoFresh Yogurt Cafe (YoFresh)",
+      "chiefExecutive": "Larry and Jean Murphy, owners",
+      "description": "YoFresh is a frozen yogurt cafe and full-serve coffee shop with 10 rotating froyo flavors, and a variety of menu items including soup, sandwiches, hot dogs, quiche, chili, and pastries.  Order in or out with Grubhub or Uber Eats. Free Wi-Fi.",
+      "phone": "(847) 859-6408",
+      "email": "yofreshevanston@gmail.com",
+      "address": "635 Chicago Ave. Evanston 60202",
+      "website": "https://yofreshcafe.com",
+      "categories": [ "Black", "Food" ]
+    },
+    {
+      "name": "Classy Closet Consignment",
+      "chiefExecutive": "C. Wilder, owner",
+      "description": "A trendy consignment and retail shop with affordable designer clothing and more.",
+      "phone": "(847) 475- 0355",
+      "email": "wildercc@hotmail.com",
+      "address": "701 Washington St., Evanston 60202",
+      "categories": [ "Black", "Retail" ]
+    },
+    {
+      "name": "Ella’s Essence Flowers and Gifts",
+      "chiefExecutive": "Ella Brantley, CEO",
+      "phone": "(224) 443-7200",
+      "email": "https://ellaessence.com",
+      "categories": [ "Black", "Retail" ]
+    },
+    {
+      "name": "Maison Du Prince LLC",
+      "description": "Your premier destination for painstakingly curated collections of home accents and personal accessories sourced from around the globe. Custom bespoke floral arrangements and impeccable special event designs are available for all occasions.",
+      "phone": "(847) 386-9020",
+      "email": "rjpdesigns99@gmail.com",
+      "address": "1239 Chicago Avenue Evanston, Illinois 60202",
+      "categories": [ "Black", "Retail" ]
+    },
+    {
+      "name": "Minouchic Boutique Resale",
+      "chiefExecutive": "Mary and Maria Toussaint, owners",
+      "description": "Established in 2013. An upscale boutique that sells new and resale clothing. Minouchic  sells Haitian attire, vintage jewelry and more.",
+      "phone": "(847) 859-2066",
+      "email": "minouchicboutitque@yahoo.com",
+      "address": "1706 Dodge Ave, Evanston, Il 60201, Evanston 60201",
+      "categories": [ "Black", "Retail" ]
+    },
+    {
+      "name": "Stepping Out on Faith Consignment",
+      "chiefExecutive": "Vivian Killebrew, owner",
+      "description": "The  store offers secondhand clothing, shoes & accessories for men and women.",
+      "phone": "(847) 733-0980",
+      "email": "Viviank570@yahoo.com",
+      "address": "1632 Orrington Ave., Evanston 60201",
+      "categories": [ "Black", "Retail" ]
+    }
+  ],
+  "archive": [
+    {
+      "name": "A.G. Tuckpointing",
+      "chiefExecutive": "Antwan Green, owner",
+      "phone": "(773) 458-9527",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "B & B Handyman Services",
+      "chiefExecutive": "Willie Brown, owner",
+      "phone": "(773) 706-8861",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    },
+    {
+      "name": "McFadden Construction & Welding",
+      "chiefExecutive": "Jessie McFadden, owner",
+      "phone": "(847) 492-9537",
+      "categories": [ "Black", "BuildingAndConstruction" ]
+    }
+  ]
+}
