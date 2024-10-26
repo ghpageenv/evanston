@@ -1,0 +1,60 @@
+asyncapi: '2.6.0'
+info:
+  title: Evanston Organizations Directory
+  version: '0.1.0'
+  description: |
+    A directory of local municipal resources.
+
+    ### Check out its awesome features:
+
+    * Business Directory
+  license:
+    name: GPL-3.0
+    url: https://www.gnu.org/licenses/gpl-3.0.html
+
+servers:
+  production:
+    url: https://acemegaschool.github.io/evanston/api/v1
+    description: Production server
+    protocol: https
+
+defaultContentType: application/json
+
+channels:
+  /directory.json:
+    publish:
+      summary: Get municipality organizations
+      operationId: getOrgs
+      message:
+        messageId: 'getOrgsMessage'
+        payload:
+          type: object
+          properties:
+            name:
+              type: string
+              description: The name of the business
+            email:
+              type: string
+              format: email
+              description: The email address of the business
+            address:
+              type: string
+              description: The physical address of the business
+            website:
+              type: string
+              description: The website of the business
+            phone:
+              type: string
+              description: The business phone number
+            chiefExecutive:
+              type: string
+              description: The chief executive of the business
+            description:
+              type: string
+              description: The description of the business
+            targetClient:
+              type: string
+              description: A description of the organization's perfect, ideal client
+            categories:
+              type: array
+              enum: ['ArtsCultureEntertainment', 'BuildingAndConstruction', 'BusProServices', 'Education', 'Black', 'FinIns', 'Funeral', 'HealthMedical', 'HomeAndGarden', 'Industrial', 'MovingStorage', 'PersonalAndHair', 'ShippingMailing', 'RealEstate', 'Food', 'Retail']
