@@ -19,7 +19,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.10" PrivateAssets="all" />
     <PackageReference Include="MudBlazor" Version="7.10.0" />
     <PackageReference Include="OneOf" Version="3.0.271" />
-    <PackageReference Include="Riok.Mapperly" Version="4.0.0" />
+    <PackageReference Include="Riok.Mapperly" Version="4.1.1" />
     <PackageReference Include="System.Text.Json" Version="8.0.5" />
     <PackageReference Include="ValueOf" Version="2.0.31" />
   </ItemGroup>
